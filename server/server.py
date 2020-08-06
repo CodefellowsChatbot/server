@@ -1,7 +1,16 @@
 #!/usr/bin/python
 # coding: utf-8
 from flask import Flask
-import os
+import os, sys
+
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+
+from resources.links import Links
+
+print(Links.javascript[401])
+
 
 app = Flask(__name__)
 port = int(os.environ.get("PORT", 5000))
