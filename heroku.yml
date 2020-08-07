@@ -1,5 +1,5 @@
 build:
     docker:
-      web: Dockerfile
-  run:
-    web: docker run -d mvpflask:latest
+        web: Dockerfile
+    run:
+        web: docker run -d mvpflask:latest
