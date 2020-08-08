@@ -24,6 +24,9 @@ https://docs.google.com/drawings/d/1e66-ylESSl5mYymCikQwHw4gtOq5ZoySrtPB-eQhDbk/
 This app is not expecting to use a database.  
 
 
+## Infrastructure/Orchestration
+Primary build technology will be Docker and we will be deploying that container to heroku, but that should be easy to lift and shift to another hosting service if needed since it will already be containerized.
+
 ## Current build/deploy instructions
 
 **build command**
