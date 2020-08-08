@@ -35,17 +35,11 @@ class Links:
     financing_and_scholarships = (
         "https://www.codefellows.org/financing-and-scholarships/"
     )
-    career_transition_services = (
-        "https://www.codefellows.org/get-a-job-in-tech/"
-    )
+    career_transition_services = "https://www.codefellows.org/get-a-job-in-tech/"
     tutoring_services = "https://www.codefellows.org/tutoring/"
-    professional_partners = (
-        "https://www.codefellows.org/powered-by-code-fellows/"
-    )
+    professional_partners = "https://www.codefellows.org/powered-by-code-fellows/"
     employer_services = "https://www.codefellows.org/employer-partnerships/"
     course_calendar = "https://www.codefellows.org/course-calendar/"
     events_calendar = "https://www.codefellows.org/events-calendar/"
-    student_stories = (
-        "https://www.codefellows.org/blog/category/student-stories/"
-    )
+    student_stories = "https://www.codefellows.org/blog/category/student-stories/"
     blog = "https://www.codefellows.org/blog/"
