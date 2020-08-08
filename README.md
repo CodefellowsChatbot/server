@@ -8,7 +8,8 @@ Chat bot which you can interact with on the command line to get questions about 
 
 
 ## Wire Frames
-This app is expected to have a minimal visual interface and for that reason has no wireframe
+![img](./resources/wireframe.png)
+
 
 ## User Stories
 https://github.com/orgs/CodefellowsChatbot/projects/2
