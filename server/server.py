@@ -1,7 +1,10 @@
 #!/usr/bin/python
 # coding: utf-8
 from flask import Flask, request, jsonify
+from chat_bot.chat import ChatBot
 import os, sys
+
+chatbot = ChatBot()
 
 currentdir = os.path.dirname(os.path.realpath(__file__))
 parentdir = os.path.dirname(currentdir)
@@ -21,9 +24,16 @@ def entry_point():
     return "Hello World!"
 
 
-@app.route("/question")
+@app.route("/question",methods=["GET", "POST"])
 def question_route():
-    return "I don't have an answer for that question yet"
+    try:
+        content = request.json
+        text = content["text"]
+        output = chatbot.respond(text)
+        print(f"Incoming request with string: {text}")
+        return jsonify({"text": output, "success": True})
+    except:
+        return jsonify({"text": "Sorry That didn't work", "success": False})
 
 
 @app.route("/proof_of_life", methods=["GET", "POST"])
@@ -35,6 +45,7 @@ def handle_proof_of_life():
         return jsonify({"text": text, "success": True})
     except:
         return jsonify({"text": "Sorry That didn't work", "success": False})
+
 
 
 if __name__ == "__main__":
