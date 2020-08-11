@@ -24,15 +24,30 @@ def get_tuition_and_duration(page) -> dict:
         else:
             pass
     return output
-    
-for course in links.courses:
-    for level in links.courses[course]:
-        try:
-            page = requests.get(links.courses[course][level])
-            output = get_tuition_and_duration(page)
-            print(f"info for {course} {level}")
-            print(output)
-        except IndexError:
-            print(f"error with {course}:{level}")
+
+def get_overview(page):
+    big_soup = BeautifulSoup(page.content, "html.parser")
+    articles = big_soup.find_all("article")
+    print(len(articles))
+    articles_dict = {}
+    for art in articles:
+        for entry in art.find_all("div"):
+            title = entry.find("h2").text.strip()
+            body = entry.text.strip()
+            articles_dict[title] = body
+    print(articles_dict.keys())
+
+page = requests.get(links.courses["javascript"][301])
+get_overview(page)
+
+# for course in links.courses:
+#     for level in links.courses[course]:
+#         try:
+#             page = requests.get(links.courses[course][level])
+#             output = get_tuition_and_duration(page)
+#             print(f"info for {course} {level}")
+#             print(output)
+#         except IndexError:
+#             print(f"error with {course}:{level}")
 
 # for language in links
