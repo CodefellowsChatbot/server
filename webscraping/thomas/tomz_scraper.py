@@ -7,6 +7,9 @@ def drill_down(URL):
     response = requests.get(URL)
     # print(response)
 
+    soup = BeautifulSoup(response.content, "html.parser")
+    print(soup.prettify())
+
 
 
 
