@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_citations_needed_count(URL):
+def get_event_calendar(URL):
     """
     This function takes in a url and returns a dictionary.
     """
@@ -23,4 +23,4 @@ def get_citations_needed_count(URL):
         event_calendar.append(course)
     return event_calendar
 
-print(get_citations_needed_count('https://www.codefellows.org/events-calendar/'))
+print(get_event_calendar('https://www.codefellows.org/events-calendar/'))
