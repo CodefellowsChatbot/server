@@ -1,19 +1,19 @@
+import json
 import requests
-from bs4 import BeautifulSoup
 
-URL = "https://www.codefellows.org/"
+URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"
 
-def drill_down(URL):
+def data_harvest(URL):
     response = requests.get(URL)
-    # print(response)
+    # data = json.load(response.content)
+    print(response.json()["courses"][0]["course"]["title"])
 
-    soup = BeautifulSoup(response.content, "html.parser")
-    print(soup.prettify())
+# replicate the above function, but that will access all of the courses, not just courses[0]
 
 
 
 
 
 if __name__ == "__main__":
-    URL = "https://www.codefellows.org/"
-    drill_down(URL)
+    URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"
+    data_harvest(URL)
