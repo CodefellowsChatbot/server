@@ -35,6 +35,5 @@ def cf_calendar(URL):
 
 if __name__ == "__main__":
     URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"
-    data_harvest(URL)
-    # cf_calendar(URL)
-    # calendar_dict(URL)
+    # data_harvest(URL)
+    cf_calendar(URL)
