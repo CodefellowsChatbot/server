@@ -1,32 +1,40 @@
+# import requests, os, sys
+# currentdir = os.path.dirname(os.path.realpath(__file__))
+# parentdir = os.path.dirname(currentdir)
+# sys.path.append(parentdir)
+# from resources.links import Links
+
+# links = Links()
+
+# URL = links.course_calendar_json
+
 import requests
 
 URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"
 
 def data_harvest(URL):
     response = requests.get(URL)
-    # print(response.json()["courses"][0]["course"]["title"])
-
-# replicate the above function, but that will access all of the courses, not just courses[0]
 
     cf_courses = response.json()["courses"]
 
-    cf_offerings = []
+    calendar = []
+
     for course in cf_courses:
         cf_normalized = {
-        'course_code' : course["course"]["code"],
-        'course_title' : course["course"]["title"],
-        'course_start' : course["course"]["startDate"],
-        'course_track' : course["course"]["track"],
-        'course_tuition' : course["course"]["price"],
-        'course_seq_and_fam' : course["course"]["sequenceAndFamily"]
+        course["course"]["title"] : {
+            'code' : course["course"]["code"],
+            'start date' : course["course"]["startDate"],
+            'track' : course["course"]["track"],
+            'Tuition' : "${:,.2f}".format(course["course"]["price"]),
         }
-        cf_offerings.append(cf_normalized)
-    print(cf_offerings)
+
+        }
+        calendar.append(cf_normalized)
+    print(calendar[0])     # REMOVE THIS ****************************
+
 
 
          
-
-
 
 if __name__ == "__main__":
     URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"

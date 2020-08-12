@@ -40,6 +40,7 @@ class Links:
     professional_partners = "https://www.codefellows.org/powered-by-code-fellows/"
     employer_services = "https://www.codefellows.org/employer-partnerships/"
     course_calendar = "https://www.codefellows.org/course-calendar/"
+    course_calendar_json = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"
     events_calendar = "https://www.codefellows.org/events-calendar/"
     student_stories = "https://www.codefellows.org/blog/category/student-stories/"
     blog = "https://www.codefellows.org/blog/"
