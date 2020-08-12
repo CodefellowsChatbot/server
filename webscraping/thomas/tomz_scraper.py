@@ -1,7 +1,4 @@
-# import json
 import requests
-# next try:
-from collections import OrderedDict
 
 URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"
 
@@ -11,56 +8,26 @@ def data_harvest(URL):
 
 # replicate the above function, but that will access all of the courses, not just courses[0]
 
-# def cf_calendar(URL):
-#     response = requests.get(URL)
-#     # print("Raise status ", response.raise_for_status())
-#     print("Status code ", response.status_code)
-#     print(response.json()["courses"])
-    # with open("response", "r") as read_file:
-    #     data = json.load(read_file)
+    cf_courses = response.json()["courses"]
 
-    # for i in data:
-    #     # fields to capture:
-    #     #     code, 
-    #     print(data["courses"][i]["course"]["code"])
-    #     #     title, 
-    #     print(data[courses][i]["course"]["title"])
-    #     #     startDate, 
-    #     print(data[courses][i]["course"]["startDate"])
-    #     #     track, 
-    #     print(data[courses][i]["course"]["track"])
-    #     #     price, 
-    #     print(data[courses][i]["course"]["price"])
-    #     #     sequenceAndFamily.
-    #     print(data[courses][i]["course"]["sequenceAndFamily"])
+    cf_offerings = []
+    for course in cf_courses:
+        cf_normalized = {
+        'course_code' : course["course"]["code"],
+        'course_title' : course["course"]["title"],
+        'course_start' : course["course"]["startDate"],
+        'course_track' : course["course"]["track"],
+        'course_tuition' : course["course"]["price"],
+        'course_seq_and_fam' : course["course"]["sequenceAndFamily"]
+        }
+        cf_offerings.append(cf_normalized)
+    print(cf_offerings)
 
-    # for i in response:
-    #     # fields to capture:
-    #     #     code, 
-    #     print(response.json()["courses"][i]["course"]["code"])
-        #     title, 
-        # print(response.json()[courses][i]["course"]["title"])
-        # #     startDate, 
-        # print(response.json()[courses][i]["course"]["startDate"])
-        # #     track, 
-        # print(response.json()[courses][i]["course"]["track"])
-        # #     price, 
-        # print(response.json()[courses][i]["course"]["price"])
-        # #     sequenceAndFamily.
-        # print(response.json()[courses][i]["course"]["sequenceAndFamily"])
 
-def calendar_dict(URL):
-    response = requests.get(URL)
-    print("ordered keys: ")
-    ordered_data = json.loads(response.json()["courses"], object_pairs_hook=OrderedDict)
-    print("Type: ", type(OrderedData))
-    print(OrderedData)
          
 
 
 
 if __name__ == "__main__":
     URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"
-    # data_harvest(URL)
-    # cf_calendar(URL)
-    calendar_dict(URL)
+    data_harvest(URL)
