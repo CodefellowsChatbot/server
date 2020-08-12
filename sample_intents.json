@@ -1,0 +1,47 @@
+{
+  "intents": [
+    {
+      "pattern": " javascript 101 Tuition",
+      "responses": ["$99"],
+      "tag": " javascript 101 $99"
+    },
+    {
+      "pattern": " javascript 101 day duration",
+      "responses": [""],
+      "tag": " javascript 101 "
+    },
+    {
+      "pattern": " javascript 101 night duration",
+      "responses": [""],
+      "tag": " javascript 101 "
+    },
+    {
+      "pattern": " javascript 101 Overview",
+      "responses": [
+        "Thinking about a new career in software development? Start here! In this workshop, you'll get a taste of a day in the life of a software developer.\nCode 101 is about learning what it looks like to be a software developer through an immersive course for beginners that focuses on front-end web development technologies.\nGet a taste of the Code Fellows learning experience, find out how websites are built, and code a webpage yourself using professional coding practices."
+      ],
+      "tag": " javascript 101 Thinking about a new career in software development? Start here! In this workshop, you'll get a taste of a day in the life of a software developer.\nCode 101 is about learning what it looks like to be a software developer through an immersive course for beginners that focuses on front-end web development technologies.\nGet a taste of the Code Fellows learning experience, find out how websites are built, and code a webpage yourself using professional coding practices."
+    },
+    {
+      "pattern": " javascript 101 Outcomes",
+      "responses": [
+        "At the end of this workshop, you will:\n\nUnderstand the basics of what it means to be a professional software developer.\nUnderstand how HTML and CSS work together to create the modern web.\nCreate a complete website.\nKnow how to deploy your website and be able to share your accomplishments with friends and family.\nBe able to identify whether a career in coding and the Code Fellows program is right for you."
+      ],
+      "tag": " javascript 101 At the end of this workshop, you will:\n\nUnderstand the basics of what it means to be a professional software developer.\nUnderstand how HTML and CSS work together to create the modern web.\nCreate a complete website.\nKnow how to deploy your website and be able to share your accomplishments with friends and family.\nBe able to identify whether a career in coding and the Code Fellows program is right for you."
+    },
+    {
+      "pattern": " javascript 101 Material Requirements",
+      "responses": [
+        "You are required to supply your own laptop, Chromebook, or iPad with a keyboard.\n\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of the workshop. Passing requires attendance at the full workshop.\nView Upcoming Dates"
+      ],
+      "tag": " javascript 101 You are required to supply your own laptop, Chromebook, or iPad with a keyboard.\n\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of the workshop. Passing requires attendance at the full workshop.\nView Upcoming Dates"
+    },
+    {
+      "pattern": " javascript 101 Professionalism",
+      "responses": [
+        "Punctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of the workshop. Passing requires attendance at the full workshop.\nView Upcoming Dates"
+      ],
+      "tag": " javascript 101 Punctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of the workshop. Passing requires attendance at the full workshop.\nView Upcoming Dates"
+    }
+  ]
+}
