@@ -1,78 +1,592 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
-        ],
-        "responses": [
-          "Hey :-)",
-          "Hello, thanks for visiting",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "courses",
-        "patterns": [
-          "What courses do you have?",
-          "What courses?"
-        ],
-        "responses": [
-          "We have java script, java, python, .net, cyber security courses"
-        ]
-      },
-      {
-        "tag": "tuition",
-        "patterns": [
-          "What is tuition?",
-          "How much?"
-        ],
-        "responses": [
-          "Tuition is 5,000$ for 201 and the same price for 301. For 401 the tuition is 12,000$"
-        ]
-      },
-      {
-        "tag": "calendar",
-        "patterns": [
-          "When nearest 201 starts?",
-          "When 201 starts?",
-          "201"
-        ],
-        "responses": [
-          "The nearest 201 starts in August 25th"
-        ]
-      },
-      {
-        "tag": "funny",
-        "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
-        ],
-        "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
-        ]
-      }
-    ]
-  }
+  "intents": [
+    {
+      "patterns": [" javascript 101 Tuition"],
+      "responses": ["$99"],
+      "tag": " javascript 101 $99"
+    },
+    {
+      "patterns": [" javascript 101 day duration"],
+      "responses": [""],
+      "tag": " javascript 101 "
+    },
+    {
+      "patterns": [" javascript 101 night duration"],
+      "responses": [""],
+      "tag": " javascript 101 "
+    },
+    {
+      "patterns": [" javascript 101 Overview"],
+      "responses": [
+        "Thinking about a new career in software development? Start here! In this workshop, you'll get a taste of a day in the life of a software developer.\nCode 101 is about learning what it looks like to be a software developer through an immersive course for beginners that focuses on front-end web development technologies.\nGet a taste of the Code Fellows learning experience, find out how websites are built, and code a webpage yourself using professional coding practices."
+      ],
+      "tag": " javascript 101 Thinking about a new career in software development? Start here! In this workshop, you'll get a taste of a day in the life of a software developer.\nCode 101 is about learning what it looks like to be a software developer through an immersive course for beginners that focuses on front-end web development technologies.\nGet a taste of the Code Fellows learning experience, find out how websites are built, and code a webpage yourself using professional coding practices."
+    },
+    {
+      "patterns": [" javascript 101 Outcomes"],
+      "responses": [
+        "At the end of this workshop, you will:\n\nUnderstand the basics of what it means to be a professional software developer.\nUnderstand how HTML and CSS work together to create the modern web.\nCreate a complete website.\nKnow how to deploy your website and be able to share your accomplishments with friends and family.\nBe able to identify whether a career in coding and the Code Fellows program is right for you."
+      ],
+      "tag": " javascript 101 At the end of this workshop, you will:\n\nUnderstand the basics of what it means to be a professional software developer.\nUnderstand how HTML and CSS work together to create the modern web.\nCreate a complete website.\nKnow how to deploy your website and be able to share your accomplishments with friends and family.\nBe able to identify whether a career in coding and the Code Fellows program is right for you."
+    },
+    {
+      "patterns": [" javascript 101 Material Requirements"],
+      "responses": [
+        "You are required to supply your own laptop, Chromebook, or iPad with a keyboard.\n\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of the workshop. Passing requires attendance at the full workshop.\nView Upcoming Dates"
+      ],
+      "tag": " javascript 101 You are required to supply your own laptop, Chromebook, or iPad with a keyboard.\n\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of the workshop. Passing requires attendance at the full workshop.\nView Upcoming Dates"
+    },
+    {
+      "patterns": [" javascript 101 Professionalism"],
+      "responses": [
+        "Punctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of the workshop. Passing requires attendance at the full workshop.\nView Upcoming Dates"
+      ],
+      "tag": " javascript 101 Punctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of the workshop. Passing requires attendance at the full workshop.\nView Upcoming Dates"
+    },
+    {
+      "patterns": [" javascript 102 Tuition"],
+      "responses": ["$1,000"],
+      "tag": " javascript 102 $1,000"
+    },
+    {
+      "patterns": [" javascript 102 day duration"],
+      "responses": ["1 Week"],
+      "tag": " javascript 102 1 Week"
+    },
+    {
+      "patterns": [" javascript 102 night duration"],
+      "responses": ["2 Weeks"],
+      "tag": " javascript 102 2 Weeks"
+    },
+    {
+      "patterns": [" javascript 102 Overview"],
+      "responses": [
+        "Not sure where or how to start learning software development? Or maybe you\u2019re discouraged by the confusing interfaces, unclear error messages, and unexplained concepts of online coding tutorials. Just want a little help ramping up for Code 201?\nIf you\u2019re ready to get unstuck and move beyond the concepts covered in Code 101, come work with experienced developers who can help guide you through your learning. Join us for Code 102! You\u2019ll blast through preparations for Code 201, while getting a tour of the tools and techniques of modern developers."
+      ],
+      "tag": " javascript 102 Not sure where or how to start learning software development? Or maybe you\u2019re discouraged by the confusing interfaces, unclear error messages, and unexplained concepts of online coding tutorials. Just want a little help ramping up for Code 201?\nIf you\u2019re ready to get unstuck and move beyond the concepts covered in Code 101, come work with experienced developers who can help guide you through your learning. Join us for Code 102! You\u2019ll blast through preparations for Code 201, while getting a tour of the tools and techniques of modern developers."
+    },
+    {
+      "patterns": [" javascript 102 Outcomes"],
+      "responses": [
+        "By the end of this workshop, you will:\n\nComplete the entirety of Code 201's required prework.\nConfigure your computer and see the workflow for serious software development, with free and open-source tools.\nDive deeper into the proper usage of \u201csemantic\u201d HTML tags.\nPractice utilizing CSS to make your web pages look the way you want.\nGet introduced to programming concepts like: Variables, Conditionals and Loops.\nLearn how to utilize JavaScript.\nBe more prepared for the challenges ahead in Code 201, or in learning to code anywhere.\nHave a wider network of new and experienced developers, and prepare your resume for all the awesome new skills you are about to learn."
+      ],
+      "tag": " javascript 102 By the end of this workshop, you will:\n\nComplete the entirety of Code 201's required prework.\nConfigure your computer and see the workflow for serious software development, with free and open-source tools.\nDive deeper into the proper usage of \u201csemantic\u201d HTML tags.\nPractice utilizing CSS to make your web pages look the way you want.\nGet introduced to programming concepts like: Variables, Conditionals and Loops.\nLearn how to utilize JavaScript.\nBe more prepared for the challenges ahead in Code 201, or in learning to code anywhere.\nHave a wider network of new and experienced developers, and prepare your resume for all the awesome new skills you are about to learn."
+    },
+    {
+      "patterns": [" javascript 102 Prerequisites"],
+      "responses": [
+        "\nRequired: Computer updated with the latest version of OS, all security patches installed. See \u201cMaterial Requirements\u201d below.\nRequired: Familiarity with basic algebra concepts.\nRequired: Code 101 or equivalent exposure to basic HTML and CSS. \nRecommended: Be able to type at least 30 words per minute."
+      ],
+      "tag": " javascript 102 \nRequired: Computer updated with the latest version of OS, all security patches installed. See \u201cMaterial Requirements\u201d below.\nRequired: Familiarity with basic algebra concepts.\nRequired: Code 101 or equivalent exposure to basic HTML and CSS. \nRecommended: Be able to type at least 30 words per minute."
+    },
+    {
+      "patterns": [" javascript 102 Multiple Track Options"],
+      "responses": [
+        "Daytime Immersive\nReady to dive in full time? Work through the course in just one week. Get trained via live, in-person or live-remote instruction from an experienced developer and trainer. Work through your hands-on assignments in collaboration with peers looking to switch into a career in software development.\nNights & Weekends\nNot quite ready to quit your day job? The Nights & Weekends track may be part-time, but it\u2019s still intensive! Come to campus weeknights for 2 weeks and on one Saturday for the exact same in-depth curriculum offered in the Daytime Immersive. Your instructor will be there for every class, providing live code demos, guiding you through lab assignments, to help you and your peers level up.\nSelf-paced Online\nWant to prepare for Code 201 at your own pace? Build your own schedule to complete the same curriculum in our self-paced online option. Access lecture videos from the Daytime Immersive, join a chat channel dedicated to you and your peers, and schedule screen-share sessions with an instructor to help you get unstuck. Take up to a month to work through the hands-on assignments, turning them in for grading through the exact same system the other tracks use.\n\n\nMaterial Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since you can\u2019t directly control installed software. Most students use Macs. You are responsible for the upkeep and maintenance of your computer throughout the course.\n\n64-bit Operating System, like macOS, Ubuntu or Windows 10 Pro.\nFully up to date, with the latest version of the operating system and all security updates installed.\nAt least 50GB of free space on the hard drive.\nAt least 8GB of RAM. 16GB RAM strongly preferred.\nFree of viruses, and in general working order.\n\nBy the first day of class\n\nYou will also need the  Web Design with HTML & CSS, JavaScript & jQuery book set by Jon Duckett\n\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules \u00bb\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nSign Up"
+      ],
+      "tag": " javascript 102 Daytime Immersive\nReady to dive in full time? Work through the course in just one week. Get trained via live, in-person or live-remote instruction from an experienced developer and trainer. Work through your hands-on assignments in collaboration with peers looking to switch into a career in software development.\nNights & Weekends\nNot quite ready to quit your day job? The Nights & Weekends track may be part-time, but it\u2019s still intensive! Come to campus weeknights for 2 weeks and on one Saturday for the exact same in-depth curriculum offered in the Daytime Immersive. Your instructor will be there for every class, providing live code demos, guiding you through lab assignments, to help you and your peers level up.\nSelf-paced Online\nWant to prepare for Code 201 at your own pace? Build your own schedule to complete the same curriculum in our self-paced online option. Access lecture videos from the Daytime Immersive, join a chat channel dedicated to you and your peers, and schedule screen-share sessions with an instructor to help you get unstuck. Take up to a month to work through the hands-on assignments, turning them in for grading through the exact same system the other tracks use.\n\n\nMaterial Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since you can\u2019t directly control installed software. Most students use Macs. You are responsible for the upkeep and maintenance of your computer throughout the course.\n\n64-bit Operating System, like macOS, Ubuntu or Windows 10 Pro.\nFully up to date, with the latest version of the operating system and all security updates installed.\nAt least 50GB of free space on the hard drive.\nAt least 8GB of RAM. 16GB RAM strongly preferred.\nFree of viruses, and in general working order.\n\nBy the first day of class\n\nYou will also need the  Web Design with HTML & CSS, JavaScript & jQuery book set by Jon Duckett\n\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules \u00bb\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nSign Up"
+    },
+    {
+      "patterns": [" javascript 102 Material Requirements"],
+      "responses": [
+        "You are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since you can\u2019t directly control installed software. Most students use Macs. You are responsible for the upkeep and maintenance of your computer throughout the course.\n\n64-bit Operating System, like macOS, Ubuntu or Windows 10 Pro.\nFully up to date, with the latest version of the operating system and all security updates installed.\nAt least 50GB of free space on the hard drive.\nAt least 8GB of RAM. 16GB RAM strongly preferred.\nFree of viruses, and in general working order.\n\nBy the first day of class\n\nYou will also need the  Web Design with HTML & CSS, JavaScript & jQuery book set by Jon Duckett\n\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules \u00bb\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nSign Up"
+      ],
+      "tag": " javascript 102 You are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since you can\u2019t directly control installed software. Most students use Macs. You are responsible for the upkeep and maintenance of your computer throughout the course.\n\n64-bit Operating System, like macOS, Ubuntu or Windows 10 Pro.\nFully up to date, with the latest version of the operating system and all security updates installed.\nAt least 50GB of free space on the hard drive.\nAt least 8GB of RAM. 16GB RAM strongly preferred.\nFree of viruses, and in general working order.\n\nBy the first day of class\n\nYou will also need the  Web Design with HTML & CSS, JavaScript & jQuery book set by Jon Duckett\n\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules \u00bb\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nSign Up"
+    },
+    {
+      "patterns": [" javascript 201 Tuition"],
+      "responses": ["$5,000"],
+      "tag": " javascript 201 $5,000"
+    },
+    {
+      "patterns": [" javascript 201 day duration"],
+      "responses": ["4 Weeks"],
+      "tag": " javascript 201 4 Weeks"
+    },
+    {
+      "patterns": [" javascript 201 night duration"],
+      "responses": ["8 Weeks"],
+      "tag": " javascript 201 8 Weeks"
+    },
+    {
+      "patterns": [" javascript 201 Overview"],
+      "responses": [
+        "Build a strong software development foundation and learn how to use HTML, CSS, JavaScript, and various libraries to create fully-functional web apps.\nThis course guides students toward developing a well-rounded foundation of skills necessary for modern web development. These skills include HTML, CSS, and JavaScript coding; utilizing Git workflow processes, project organization, designing with wireframing and employing introductory Agile development methods.\nThis course includes a career coaching curriculum to get you ready for your job search. The course totals 160 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " javascript 201 Build a strong software development foundation and learn how to use HTML, CSS, JavaScript, and various libraries to create fully-functional web apps.\nThis course guides students toward developing a well-rounded foundation of skills necessary for modern web development. These skills include HTML, CSS, and JavaScript coding; utilizing Git workflow processes, project organization, designing with wireframing and employing introductory Agile development methods.\nThis course includes a career coaching curriculum to get you ready for your job search. The course totals 160 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" javascript 201 Outcomes"],
+      "responses": [
+        "At the end of this course, you will:\n\nDefine the structure of a web page utilizing the semantic hierarchical structural conventions of HTML5.\nApply CSS and HTML to implement page layout styles including grid, fluid, and responsive techniques; and to style content with color, typography, and images.\nUtilize Javascript to make web projects interactive, such that user input is stored and processed to create updated and personalized content when a user interacts with a page.\nWrite JavaScript that leverages the fundamentals of Computer Science, the Object-Oriented Programming paradigm, basic data types, data structures, and basic algorithms, so that the code is efficient, error-free, and matches commonly accepted standards and practices of syntax and style, as measured by the code\u2019s functionality and ability to pass a code linter.\nUtilize industry-standard version control tools and workflows, including Git and GitHub, to write functional, properly styled code and to work efficiently and harmoniously in professional environments.\nBe prepared for a Code 301 course."
+      ],
+      "tag": " javascript 201 At the end of this course, you will:\n\nDefine the structure of a web page utilizing the semantic hierarchical structural conventions of HTML5.\nApply CSS and HTML to implement page layout styles including grid, fluid, and responsive techniques; and to style content with color, typography, and images.\nUtilize Javascript to make web projects interactive, such that user input is stored and processed to create updated and personalized content when a user interacts with a page.\nWrite JavaScript that leverages the fundamentals of Computer Science, the Object-Oriented Programming paradigm, basic data types, data structures, and basic algorithms, so that the code is efficient, error-free, and matches commonly accepted standards and practices of syntax and style, as measured by the code\u2019s functionality and ability to pass a code linter.\nUtilize industry-standard version control tools and workflows, including Git and GitHub, to write functional, properly styled code and to work efficiently and harmoniously in professional environments.\nBe prepared for a Code 301 course."
+    },
+    {
+      "patterns": [" javascript 201 Prerequisites"],
+      "responses": [
+        "\nRequired: Familiarity with basic algebra concepts.\nCode 101: Explore Software Development: If you are completely new to coding, complete Code 101 to build your first website using HTML and CSS and to find out if a career in software development is right for you.\n            Code 102: Intro to Software Development:  Prepare for the Code 201 deep-dive with instructor-led labs introducing you to the professional tools of the trade, like git and the powerful VSCode text editor. Practice more with HTML & CSS, and learn basic JavaScript as you deploy themed websites with GitHub Pages."
+      ],
+      "tag": " javascript 201 \nRequired: Familiarity with basic algebra concepts.\nCode 101: Explore Software Development: If you are completely new to coding, complete Code 101 to build your first website using HTML and CSS and to find out if a career in software development is right for you.\n            Code 102: Intro to Software Development:  Prepare for the Code 201 deep-dive with instructor-led labs introducing you to the professional tools of the trade, like git and the powerful VSCode text editor. Practice more with HTML & CSS, and learn basic JavaScript as you deploy themed websites with GitHub Pages."
+    },
+    {
+      "patterns": [" javascript 301 Tuition"],
+      "responses": ["$5,000"],
+      "tag": " javascript 301 $5,000"
+    },
+    {
+      "patterns": [" javascript 301 day duration"],
+      "responses": ["4 Weeks"],
+      "tag": " javascript 301 4 Weeks"
+    },
+    {
+      "patterns": [" javascript 301 night duration"],
+      "responses": ["8 Weeks"],
+      "tag": " javascript 301 8 Weeks"
+    },
+    {
+      "patterns": [" javascript 301 Overview"],
+      "responses": [
+        "Becoming a well-rounded developer is much more than learning language syntax.\nIn this intensive course, you will study the common core of software development, including MVC architecture, object-oriented and functional programming, and computer science fundamentals such as basic data structures and algorithms. Come learn how to create and launch web apps in HTML, CSS, and JavaScript, with the help of third-party APIs and libraries from around the web.\nThis course includes a career coaching curriculum to get you ready for your job search. The course totals 160 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " javascript 301 Becoming a well-rounded developer is much more than learning language syntax.\nIn this intensive course, you will study the common core of software development, including MVC architecture, object-oriented and functional programming, and computer science fundamentals such as basic data structures and algorithms. Come learn how to create and launch web apps in HTML, CSS, and JavaScript, with the help of third-party APIs and libraries from around the web.\nThis course includes a career coaching curriculum to get you ready for your job search. The course totals 160 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" javascript 301 Outcomes"],
+      "responses": [
+        "At the end of this course, students will be able to:\n\nCollaboratively design and create web applications from scratch using MVC architecture built with professional-grade HTML, CSS, and JavaScript.\nWork with string, array, and object data structures and algorithms to solve code challenges with pure JavaScript programming.\nBuild dynamic frontend and backend applications and are deployed to cloud platforms.\nExplain the fundamentals of how the World Wide Web works, over the internet.\nUtilize dependency management techniques to build with third-party libraries such as ExpressJS, jQuery, EJS, and Mustache.\nPersist one-to-many relational data across multiple tables in a SQL database, sourced from third-party API or user-generated content.\nFollow agile software development practices during week-long sprints, including pair-programming, stand-ups, daily retrospectives, project management with Kanban boards, regular refactoring, and working in a shared codebase.\nEnroll in a Code 401 course or attain an entry-level website development job or internship by completing the course requirements."
+      ],
+      "tag": " javascript 301 At the end of this course, students will be able to:\n\nCollaboratively design and create web applications from scratch using MVC architecture built with professional-grade HTML, CSS, and JavaScript.\nWork with string, array, and object data structures and algorithms to solve code challenges with pure JavaScript programming.\nBuild dynamic frontend and backend applications and are deployed to cloud platforms.\nExplain the fundamentals of how the World Wide Web works, over the internet.\nUtilize dependency management techniques to build with third-party libraries such as ExpressJS, jQuery, EJS, and Mustache.\nPersist one-to-many relational data across multiple tables in a SQL database, sourced from third-party API or user-generated content.\nFollow agile software development practices during week-long sprints, including pair-programming, stand-ups, daily retrospectives, project management with Kanban boards, regular refactoring, and working in a shared codebase.\nEnroll in a Code 401 course or attain an entry-level website development job or internship by completing the course requirements."
+    },
+    {
+      "patterns": [" javascript 301 Prerequisites"],
+      "responses": [
+        "\nCode 201\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into Code 301, please make sure you have experience with all of the topics listed on the Code 201 course page."
+      ],
+      "tag": " javascript 301 \nCode 201\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into Code 301, please make sure you have experience with all of the topics listed on the Code 201 course page."
+    },
+    {
+      "patterns": [" javascript 301 Prework"],
+      "responses": [
+        "Once you are accepted into the course, please complete the Code 301 Prework."
+      ],
+      "tag": " javascript 301 Once you are accepted into the course, please complete the Code 301 Prework."
+    },
+    {
+      "patterns": [" javascript 301 Career Transition Services"],
+      "responses": [
+        "Changing careers is about more than learning a new skill. In tandem with your software development education, you will receive powerful career-building strategic training so you can confidently start your job search as soon as (or even before!) you graduate.\nOur Career Transition Services provide training, mentoring, leadership, and introductions to industry partners to help you become a more well-rounded software developer and a leader in your field. These services, which start in Code 201 and continue after Code 401 graduation, involve a series of events, workshops, and assignments that help you think holistically about your new career and take actionable steps towards success. Learn More\u00a0\u00bb\n\nMaterial Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since you can\u2019t directly control installed software. Most students use Macs. You are responsible for the upkeep and maintenance of your computer throughout the course. The course pre-work will have specific instructions for configuring your computer to be ready for the first day of class.\n\n64-bit Operating System, like macOS, Ubuntu or Windows 10 Pro.\nFully up to date, with the latest version of the operating system and all security updates installed.\nAt least 50GB of free space on the hard drive.\nAt least 8GB of RAM. 16GB RAM strongly preferred.\nFree of viruses, and in general working order.\n\nBy the first day of class, you will need:\n\nThe latest version of Google Chrome\nThe Visual Studio Code editor\nA GitHub account\nYou will also need the  Web Design with HTML & CSS, JavaScript & jQuery book set by Jon Duckett\n\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules \u00bb\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+      ],
+      "tag": " javascript 301 Changing careers is about more than learning a new skill. In tandem with your software development education, you will receive powerful career-building strategic training so you can confidently start your job search as soon as (or even before!) you graduate.\nOur Career Transition Services provide training, mentoring, leadership, and introductions to industry partners to help you become a more well-rounded software developer and a leader in your field. These services, which start in Code 201 and continue after Code 401 graduation, involve a series of events, workshops, and assignments that help you think holistically about your new career and take actionable steps towards success. Learn More\u00a0\u00bb\n\nMaterial Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since you can\u2019t directly control installed software. Most students use Macs. You are responsible for the upkeep and maintenance of your computer throughout the course. The course pre-work will have specific instructions for configuring your computer to be ready for the first day of class.\n\n64-bit Operating System, like macOS, Ubuntu or Windows 10 Pro.\nFully up to date, with the latest version of the operating system and all security updates installed.\nAt least 50GB of free space on the hard drive.\nAt least 8GB of RAM. 16GB RAM strongly preferred.\nFree of viruses, and in general working order.\n\nBy the first day of class, you will need:\n\nThe latest version of Google Chrome\nThe Visual Studio Code editor\nA GitHub account\nYou will also need the  Web Design with HTML & CSS, JavaScript & jQuery book set by Jon Duckett\n\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules \u00bb\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+    },
+    {
+      "patterns": [" javascript 401 Tuition"],
+      "responses": ["$12,000"],
+      "tag": " javascript 401 $12,000"
+    },
+    {
+      "patterns": [" javascript 401 day duration"],
+      "responses": ["10 Weeks"],
+      "tag": " javascript 401 10 Weeks"
+    },
+    {
+      "patterns": [" javascript 401 night duration"],
+      "responses": ["20 Weeks"],
+      "tag": " javascript 401 20 Weeks"
+    },
+    {
+      "patterns": [" javascript 401 Overview"],
+      "responses": [
+        "Build full-stack web applications with server-side Node.js and modern, client-side, front-end libraries and frameworks, including React. Throughout this intensive course, you will study data structures and algorithms, professional software development techniques, and established industry best practices as you advance your skills in full-stack JavaScript.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " javascript 401 Build full-stack web applications with server-side Node.js and modern, client-side, front-end libraries and frameworks, including React. Throughout this intensive course, you will study data structures and algorithms, professional software development techniques, and established industry best practices as you advance your skills in full-stack JavaScript.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" javascript 401 Outcomes"],
+      "responses": [
+        "By the end of this course, you will:\n\nBuild and contribute to a server-side and client-side application, each using an architecture/framework that promotes maintainability, scalability, and collaboration. These skills will be fully demonstrated during project week during their team development of a prototype, adhering to industry best practices and patterns.\nApply Computer Science fundamentals in analyzing the trade-offs between competing solutions when choosing algorithms; JavaScript coding patterns and practices; and byte formats that do not degrade the performance or Node browser functionality of their applications.\nBe given a series of career development workshops and the web development knowledge, experience, habits, and practices learned in this course, students will create an online brand, network, and resume; and will demonstrate aptitude in personal and technical interviews of varying formats, in order to conduct a successful job search and obtain a job as a Full-Stack JavaScript or Front-End Web Developer."
+      ],
+      "tag": " javascript 401 By the end of this course, you will:\n\nBuild and contribute to a server-side and client-side application, each using an architecture/framework that promotes maintainability, scalability, and collaboration. These skills will be fully demonstrated during project week during their team development of a prototype, adhering to industry best practices and patterns.\nApply Computer Science fundamentals in analyzing the trade-offs between competing solutions when choosing algorithms; JavaScript coding patterns and practices; and byte formats that do not degrade the performance or Node browser functionality of their applications.\nBe given a series of career development workshops and the web development knowledge, experience, habits, and practices learned in this course, students will create an online brand, network, and resume; and will demonstrate aptitude in personal and technical interviews of varying formats, in order to conduct a successful job search and obtain a job as a Full-Stack JavaScript or Front-End Web Developer."
+    },
+    {
+      "patterns": [" javascript 401 Prerequisites"],
+      "responses": [
+        "\nCode 301\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Code 201 and Code 301 course pages.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+      ],
+      "tag": " javascript 401 \nCode 301\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Code 201 and Code 301 course pages.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+    },
+    {
+      "patterns": [" python 401 Tuition"],
+      "responses": ["$12,000"],
+      "tag": " python 401 $12,000"
+    },
+    {
+      "patterns": [" python 401 day duration"],
+      "responses": ["10 Weeks"],
+      "tag": " python 401 10 Weeks"
+    },
+    {
+      "patterns": [" python 401 night duration"],
+      "responses": ["20 Weeks"],
+      "tag": " python 401 20 Weeks"
+    },
+    {
+      "patterns": [" python 401 Overview"],
+      "responses": [
+        "Learn the language used at NASA, Instagram, Dropbox, and other  companies large and small \u2013 as you build professional-grade apps in Python.\nThroughout this intensive course, you will study professional software development techniques and practices as you advance your skills in Python.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " python 401 Learn the language used at NASA, Instagram, Dropbox, and other  companies large and small \u2013 as you build professional-grade apps in Python.\nThroughout this intensive course, you will study professional software development techniques and practices as you advance your skills in Python.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" python 401 Outcomes"],
+      "responses": [
+        "At the end of this course, you will be able to attain an entry-level Python web developer job by:\n\nBeing able to take project ideas from conception all the way through full-stack execution and deployment using common Python frameworks and deployment tools.\nContributing to existing and ongoing projects using professional version-controlled workflows, working in tandem with your classmates on collaborative assignments.\nFully understanding the interaction between the code as it is written, the data on your machine, and the result that gets served to the client/browser.\nWriting secure web apps that can deter hackers from exploiting the most common vulnerabilities in your sites.\nDeveloping a portfolio of assigned and self-directed projects, as well as building your own code libraries of algorithms and data structures commonly found in computer science and software development.\nRegularly engaging in code review, attaining the ability to understand someone else\u2019s code, collaborating with a team of coders of varying levels of experience, and suggesting improvements to the code base in question.\nParticipating in a series of career development workshops and the web development knowledge, experience, habits, and practices learned in this course. You will create an online brand, network, and resume, and will demonstrate aptitude in personal and technical interviews of varying formats, in order to conduct a successful job search and obtain a job as a Python Web Developer."
+      ],
+      "tag": " python 401 At the end of this course, you will be able to attain an entry-level Python web developer job by:\n\nBeing able to take project ideas from conception all the way through full-stack execution and deployment using common Python frameworks and deployment tools.\nContributing to existing and ongoing projects using professional version-controlled workflows, working in tandem with your classmates on collaborative assignments.\nFully understanding the interaction between the code as it is written, the data on your machine, and the result that gets served to the client/browser.\nWriting secure web apps that can deter hackers from exploiting the most common vulnerabilities in your sites.\nDeveloping a portfolio of assigned and self-directed projects, as well as building your own code libraries of algorithms and data structures commonly found in computer science and software development.\nRegularly engaging in code review, attaining the ability to understand someone else\u2019s code, collaborating with a team of coders of varying levels of experience, and suggesting improvements to the code base in question.\nParticipating in a series of career development workshops and the web development knowledge, experience, habits, and practices learned in this course. You will create an online brand, network, and resume, and will demonstrate aptitude in personal and technical interviews of varying formats, in order to conduct a successful job search and obtain a job as a Python Web Developer."
+    },
+    {
+      "patterns": [" python 401 Prerequisites"],
+      "responses": [
+        "\nCode 301\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Code 201 and Code 301 course pages.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+      ],
+      "tag": " python 401 \nCode 301\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Code 201 and Code 301 course pages.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+    },
+    {
+      "patterns": [" asp.net asp dotnet 401 Tuition"],
+      "responses": ["$12,000"],
+      "tag": " asp.net asp dotnet 401 $12,000"
+    },
+    {
+      "patterns": [" asp.net asp dotnet 401 day duration"],
+      "responses": ["10 Weeks"],
+      "tag": " asp.net asp dotnet 401 10 Weeks"
+    },
+    {
+      "patterns": [" asp.net asp dotnet 401 night duration"],
+      "responses": [""],
+      "tag": " asp.net asp dotnet 401 "
+    },
+    {
+      "patterns": [" asp.net asp dotnet 401 Overview"],
+      "responses": [
+        "Learn to write clean, well-tested, advanced C# code using industry-standard software engineering patterns and Microsoft's new ASP.NET Core framework.\nYou will use Visual Studio Community Edition to create ASP.NET MVC Core applications and work with Azure to deploy applications onto a live server within the cloud. The course focuses on fundamental computer science concepts like object-oriented programming, advanced data structures and algorithms, and the foundations of Microsoft\u2019s ASP.NET Core Framework. Students will progressively build projects from start to finish following industry best practices and standard agile methodology. \nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " asp.net asp dotnet 401 Learn to write clean, well-tested, advanced C# code using industry-standard software engineering patterns and Microsoft's new ASP.NET Core framework.\nYou will use Visual Studio Community Edition to create ASP.NET MVC Core applications and work with Azure to deploy applications onto a live server within the cloud. The course focuses on fundamental computer science concepts like object-oriented programming, advanced data structures and algorithms, and the foundations of Microsoft\u2019s ASP.NET Core Framework. Students will progressively build projects from start to finish following industry best practices and standard agile methodology. \nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" asp.net asp dotnet 401 Outcomes"],
+      "responses": [
+        "At the end of this course, you will be ready for an entry-level software development position by:\n\nBuild and contribute to web applications, using an architecture and framework that promotes maintainability, scalability, and collaboration. These skills will be fully demonstrated during project weeks through their team development of a prototype, adhering to industry best practices and patterns.\nApply and learn about the agile methodology by writing user stories, estimating project hours, and meeting deadlines through pre-set milestones within multiple sprints. These skills will be fully demonstrated through an iterative project in the second half of the course as students work with a partner as they plan and build towards a final deliverable. Applying Computer Science fundamentals when analyzing the trade-offs between competing solutions when choosing data structures and algorithms, through daily whiteboard challenges to be prepared for technical interviews.\nParticipating in a series of career development workshops to build a network, establish a clean online presence, polish a resume, and establish other professional skills.\nFollow industry-standard collaborative development practices to completing a large project in week-long sprints, utilizing agile techniques such as user story construction, proper git-flow with a Kanban board, peer reviews, and individual retrospectives."
+      ],
+      "tag": " asp.net asp dotnet 401 At the end of this course, you will be ready for an entry-level software development position by:\n\nBuild and contribute to web applications, using an architecture and framework that promotes maintainability, scalability, and collaboration. These skills will be fully demonstrated during project weeks through their team development of a prototype, adhering to industry best practices and patterns.\nApply and learn about the agile methodology by writing user stories, estimating project hours, and meeting deadlines through pre-set milestones within multiple sprints. These skills will be fully demonstrated through an iterative project in the second half of the course as students work with a partner as they plan and build towards a final deliverable. Applying Computer Science fundamentals when analyzing the trade-offs between competing solutions when choosing data structures and algorithms, through daily whiteboard challenges to be prepared for technical interviews.\nParticipating in a series of career development workshops to build a network, establish a clean online presence, polish a resume, and establish other professional skills.\nFollow industry-standard collaborative development practices to completing a large project in week-long sprints, utilizing agile techniques such as user story construction, proper git-flow with a Kanban board, peer reviews, and individual retrospectives."
+    },
+    {
+      "patterns": [" asp.net asp dotnet 401 Prerequisites"],
+      "responses": [
+        "\nCode 301\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Code 201 and Code 301 course pages.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+      ],
+      "tag": " asp.net asp dotnet 401 \nCode 301\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Code 201 and Code 301 course pages.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+    },
+    {
+      "patterns": [" mobile 401 Tuition"],
+      "responses": ["$12,000"],
+      "tag": " mobile 401 $12,000"
+    },
+    {
+      "patterns": [" mobile 401 day duration"],
+      "responses": ["10 Weeks"],
+      "tag": " mobile 401 10 Weeks"
+    },
+    {
+      "patterns": [" mobile 401 night duration"],
+      "responses": [""],
+      "tag": " mobile 401 "
+    },
+    {
+      "patterns": [" mobile 401 Overview"],
+      "responses": [
+        "Create mobile games and apps for the Android and iOS operating systems. Take your app ideas from concept to completion and learn the tools, frameworks, and best practices used by mobile developers around the world. \nThroughout this intensive course, you will study professional techniques and practices as you advance your skills in mobile development. This course includes career development curriculum to get you ready for your job search, plus job search assistance after graduation.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " mobile 401 Create mobile games and apps for the Android and iOS operating systems. Take your app ideas from concept to completion and learn the tools, frameworks, and best practices used by mobile developers around the world. \nThroughout this intensive course, you will study professional techniques and practices as you advance your skills in mobile development. This course includes career development curriculum to get you ready for your job search, plus job search assistance after graduation.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" mobile 401 Outcomes"],
+      "responses": [
+        "At the end of this course, you will be able to:\n\nCreate mobile apps in Java for the Android operating system and Swift for the iOS operating system.\nUse industry tools and frameworks, such as Cocoa, Xcode, UIKit, and Git.\nUnderstand and know how to properly use UIKit, asynchronous code, CoreImage, NSURLSession and JSON, AutoLayout, Source Control, Core Data, Animation, and the app submission process."
+      ],
+      "tag": " mobile 401 At the end of this course, you will be able to:\n\nCreate mobile apps in Java for the Android operating system and Swift for the iOS operating system.\nUse industry tools and frameworks, such as Cocoa, Xcode, UIKit, and Git.\nUnderstand and know how to properly use UIKit, asynchronous code, CoreImage, NSURLSession and JSON, AutoLayout, Source Control, Core Data, Animation, and the app submission process."
+    },
+    {
+      "patterns": [" mobile 401 Prerequisites"],
+      "responses": [
+        "\nCode 301\n\nStudents with previous mobile development experience can test out of this requirement in their application. If you'd like to test straight into this course, you will need to showcase at least one live web or mobile app that shows off your skills as a developer.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+      ],
+      "tag": " mobile 401 \nCode 301\n\nStudents with previous mobile development experience can test out of this requirement in their application. If you'd like to test straight into this course, you will need to showcase at least one live web or mobile app that shows off your skills as a developer.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+    },
+    {
+      "patterns": [" java 401 Tuition"],
+      "responses": ["$12,000"],
+      "tag": " java 401 $12,000"
+    },
+    {
+      "patterns": [" java 401 day duration"],
+      "responses": ["10 Weeks"],
+      "tag": " java 401 10 Weeks"
+    },
+    {
+      "patterns": [" java 401 night duration"],
+      "responses": [""],
+      "tag": " java 401 "
+    },
+    {
+      "patterns": [" java 401 Overview"],
+      "responses": [
+        "Learn to write clean, crystal-clear, well-tested, advanced Java code using industry-standard software engineering patterns while building servers with SpringMVC and mobile apps with Android.\nIn this course, you will use IntelliJ IDEA and Android Studio to create Java applications. You will deploy the applications to a scalable cloud server platform, install your Android applications onto your phone, and have the apps communicate with AWS services like DynamoDB, Cognito, Pinpoint and Lambda using AWS Amplify.\nThe course focuses on fundamental computer science concepts such as object-oriented programming, advanced data structures and algorithms, Big O asymptotic analysis, and the structure of statically typed languages.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " java 401 Learn to write clean, crystal-clear, well-tested, advanced Java code using industry-standard software engineering patterns while building servers with SpringMVC and mobile apps with Android.\nIn this course, you will use IntelliJ IDEA and Android Studio to create Java applications. You will deploy the applications to a scalable cloud server platform, install your Android applications onto your phone, and have the apps communicate with AWS services like DynamoDB, Cognito, Pinpoint and Lambda using AWS Amplify.\nThe course focuses on fundamental computer science concepts such as object-oriented programming, advanced data structures and algorithms, Big O asymptotic analysis, and the structure of statically typed languages.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" java 401 Outcomes"],
+      "responses": [
+        "At the end of this course, you will be able to land an entry-level Java or Android Developer position by:\n        \n\nBeing able to take project ideas from conception all the way through full-stack execution and deployment using common frameworks and tools.\nContributing to existing and ongoing projects using professional version-controlled workflows, working in tandem with your classmates on collaborative assignments.\nBuilding and contributing to server-side and client-side applications, each using an architecture/framework that promotes maintainability, scalability, and collaboration. These skills will be fully demonstrated during project week when your team develops its own prototype applications, adhering to industry best practices and patterns.\nApplying Computer Science fundamentals when analyzing the trade-offs between competing solutions when choosing algorithms; when choosing data structures; when deciding which cloud tools and services to use in building a complete application; and when making sure not to degrade the performance or functionality of cloud-based and mobile applications.\nParticipating in a series of career development workshops and the web development knowledge, experience, habits, and practices learned in this course. You will create an online brand, network, and resume, and will demonstrate aptitude in personal and technical interviews of varying formats, in order to conduct a successful job search and obtain a job as a Java or Android developer."
+      ],
+      "tag": " java 401 At the end of this course, you will be able to land an entry-level Java or Android Developer position by:\n        \n\nBeing able to take project ideas from conception all the way through full-stack execution and deployment using common frameworks and tools.\nContributing to existing and ongoing projects using professional version-controlled workflows, working in tandem with your classmates on collaborative assignments.\nBuilding and contributing to server-side and client-side applications, each using an architecture/framework that promotes maintainability, scalability, and collaboration. These skills will be fully demonstrated during project week when your team develops its own prototype applications, adhering to industry best practices and patterns.\nApplying Computer Science fundamentals when analyzing the trade-offs between competing solutions when choosing algorithms; when choosing data structures; when deciding which cloud tools and services to use in building a complete application; and when making sure not to degrade the performance or functionality of cloud-based and mobile applications.\nParticipating in a series of career development workshops and the web development knowledge, experience, habits, and practices learned in this course. You will create an online brand, network, and resume, and will demonstrate aptitude in personal and technical interviews of varying formats, in order to conduct a successful job search and obtain a job as a Java or Android developer."
+    },
+    {
+      "patterns": [" java 401 Prerequisites"],
+      "responses": [
+        "\nCode 301\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Code 201 and Code 301 course pages.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+      ],
+      "tag": " java 401 \nCode 301\n\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Code 201 and Code 301 course pages.\n\n\nAll students are expected to complete the prework for this course before the first day of class."
+    },
+    {
+      "patterns": [" ops and cyber security 101 Tuition"],
+      "responses": ["$99"],
+      "tag": " ops and cyber security 101 $99"
+    },
+    {
+      "patterns": [" ops and cyber security 101 day duration"],
+      "responses": [""],
+      "tag": " ops and cyber security 101 "
+    },
+    {
+      "patterns": [" ops and cyber security 101 night duration"],
+      "responses": [""],
+      "tag": " ops and cyber security 101 "
+    },
+    {
+      "patterns": [" ops and cyber security 101 Overview"],
+      "responses": [
+        "Interested in a new career in cybersecurity? Start here! In this one-day workshop, you\u2019ll get to experience the process of evaluating personal cybersecurity levels and making changes to proactively defend against cyber-attack.\nOps 101 is about learning what cybersecurity is all about, through a day-long immersive course for beginners that focuses on protecting yourself using tools like a password management system. The only technical skill required to take the course is basic computer use familiarity.\nGet a taste of the all-new Code Fellows cyber ops program, learn how systems are evaluated for security risks, and implement your own defensive processes."
+      ],
+      "tag": " ops and cyber security 101 Interested in a new career in cybersecurity? Start here! In this one-day workshop, you\u2019ll get to experience the process of evaluating personal cybersecurity levels and making changes to proactively defend against cyber-attack.\nOps 101 is about learning what cybersecurity is all about, through a day-long immersive course for beginners that focuses on protecting yourself using tools like a password management system. The only technical skill required to take the course is basic computer use familiarity.\nGet a taste of the all-new Code Fellows cyber ops program, learn how systems are evaluated for security risks, and implement your own defensive processes."
+    },
+    {
+      "patterns": [" ops and cyber security 101 Outcomes"],
+      "responses": [
+        "At the end of this workshop, you will:\n\nGet the latest personal cybersecurity best practices\nDiscover how much of your data the cybercriminals can see\nUse web resources to check for personal data exposure\nDistinguish good from bad passwords, and learn what\u2019s even better than passwords\nProtect your online accounts with a secure, cloud-based password manager\nAssess and improve your own personal cybersecurity postures\nResearch and create a report on a critical area of digital hygiene for your friends and family"
+      ],
+      "tag": " ops and cyber security 101 At the end of this workshop, you will:\n\nGet the latest personal cybersecurity best practices\nDiscover how much of your data the cybercriminals can see\nUse web resources to check for personal data exposure\nDistinguish good from bad passwords, and learn what\u2019s even better than passwords\nProtect your online accounts with a secure, cloud-based password manager\nAssess and improve your own personal cybersecurity postures\nResearch and create a report on a critical area of digital hygiene for your friends and family"
+    },
+    {
+      "patterns": [" ops and cyber security 102 Tuition"],
+      "responses": ["$1,000"],
+      "tag": " ops and cyber security 102 $1,000"
+    },
+    {
+      "patterns": [" ops and cyber security 102 day duration"],
+      "responses": ["1 Week"],
+      "tag": " ops and cyber security 102 1 Week"
+    },
+    {
+      "patterns": [" ops and cyber security 102 night duration"],
+      "responses": ["2 Weeks"],
+      "tag": " ops and cyber security 102 2 Weeks"
+    },
+    {
+      "patterns": [" ops and cyber security 102 Overview"],
+      "responses": [
+        "Curious about how computers work? Ever wonder how technology professionals build physical computers, upgrade components, configure virtual machines?  Join us for Ops 102! You\u2019ll blast through preparations for Ops 201, while getting a tour of the tools and techniques of modern IT professionals at the single computer level."
+      ],
+      "tag": " ops and cyber security 102 Curious about how computers work? Ever wonder how technology professionals build physical computers, upgrade components, configure virtual machines?  Join us for Ops 102! You\u2019ll blast through preparations for Ops 201, while getting a tour of the tools and techniques of modern IT professionals at the single computer level."
+    },
+    {
+      "patterns": [" ops and cyber security 102 Outcomes"],
+      "responses": [
+        "By the end of this workshop, you will:\n\nHave confidence in performing basic computer technical operations within an operating system\nDive deeper into how computer workstations function \nGet introduced to IT operations concepts like provisioning, virtualization, working with hardware interfaces, and more\nDevelop proficiency in installing new software and peripherals\nBe fully prepared for the challenges ahead in Ops 201\nHave a wider network of new and experienced information systems professionals, and prepare your resume for all the awesome new skills you are about to learn"
+      ],
+      "tag": " ops and cyber security 102 By the end of this workshop, you will:\n\nHave confidence in performing basic computer technical operations within an operating system\nDive deeper into how computer workstations function \nGet introduced to IT operations concepts like provisioning, virtualization, working with hardware interfaces, and more\nDevelop proficiency in installing new software and peripherals\nBe fully prepared for the challenges ahead in Ops 201\nHave a wider network of new and experienced information systems professionals, and prepare your resume for all the awesome new skills you are about to learn"
+    },
+    {
+      "patterns": [" ops and cyber security 102 Prerequisites"],
+      "responses": [
+        "\nRequired: Computer updated with the latest version of OS, all security patches installed. See \u201cMaterial Requirements\u201d below.\nRequired: Ops 101 or equivalent exposure to basic IT systems"
+      ],
+      "tag": " ops and cyber security 102 \nRequired: Computer updated with the latest version of OS, all security patches installed. See \u201cMaterial Requirements\u201d below.\nRequired: Ops 101 or equivalent exposure to basic IT systems"
+    },
+    {
+      "patterns": [" ops and cyber security 102 Multiple Track Options"],
+      "responses": [
+        "Daytime Immersive\nReady to dive in full time? Work through the course in just one week. Get trained via live, in-person instruction from an experienced professional and educator. Work through your hands-on assignments in collaboration with peers looking to switch into a career in cyber ops.\nNights & Weekends\nNot quite ready to quit your day job? The Nights & Weekends track may be part-time, but it\u2019s still intensive! Come to campus weeknights for 2 weeks and on one Saturday for the exact same in-depth curriculum offered in the Daytime Immersive. Your instructor will be there for every class, providing live instruction and demos, guiding you through lab assignments, to help you and your peers level up.\nSelf-paced Online\nWant to prepare for Ops 201 at your own pace? Build your own schedule to complete the same curriculum in our self-paced online option. Access lecture videos from the Daytime Immersive, join a chat channel dedicated to you and your peers, and schedule screen-share sessions with an instructor to help you get unstuck. Take up to a month to work through the hands-on assignments, turning them in for grading through the exact same system the other tracks use.\n\n\nMaterial Requirements\nFor all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nSign Up"
+      ],
+      "tag": " ops and cyber security 102 Daytime Immersive\nReady to dive in full time? Work through the course in just one week. Get trained via live, in-person instruction from an experienced professional and educator. Work through your hands-on assignments in collaboration with peers looking to switch into a career in cyber ops.\nNights & Weekends\nNot quite ready to quit your day job? The Nights & Weekends track may be part-time, but it\u2019s still intensive! Come to campus weeknights for 2 weeks and on one Saturday for the exact same in-depth curriculum offered in the Daytime Immersive. Your instructor will be there for every class, providing live instruction and demos, guiding you through lab assignments, to help you and your peers level up.\nSelf-paced Online\nWant to prepare for Ops 201 at your own pace? Build your own schedule to complete the same curriculum in our self-paced online option. Access lecture videos from the Daytime Immersive, join a chat channel dedicated to you and your peers, and schedule screen-share sessions with an instructor to help you get unstuck. Take up to a month to work through the hands-on assignments, turning them in for grading through the exact same system the other tracks use.\n\n\nMaterial Requirements\nFor all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nSign Up"
+    },
+    {
+      "patterns": [" ops and cyber security 102 Material Requirements"],
+      "responses": [
+        "For all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nSign Up"
+      ],
+      "tag": " ops and cyber security 102 For all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nSign Up"
+    },
+    {
+      "patterns": [" ops and cyber security 201 Tuition"],
+      "responses": ["$5,000"],
+      "tag": " ops and cyber security 201 $5,000"
+    },
+    {
+      "patterns": [" ops and cyber security 201 day duration"],
+      "responses": ["4 Weeks"],
+      "tag": " ops and cyber security 201 4 Weeks"
+    },
+    {
+      "patterns": [" ops and cyber security 201 night duration"],
+      "responses": ["8 Weeks"],
+      "tag": " ops and cyber security 201 8 Weeks"
+    },
+    {
+      "patterns": [" ops and cyber security 201 Overview"],
+      "responses": [
+        "Learn to support technology operations by resolving issues with hardware, software, and virtual or cloud systems.\nIn this hands-on course, you will deploy and troubleshoot Windows and Linux operating systems in various virtual and cloud environments. Key skills such as customer service, knowledge and process documentation, system shell proficiency, performance monitoring, system process management, issue handling, backup/imaging/recovery tools, and software application installation, maintenance, and removal will be practiced.\nThe course focuses on practical systems support and troubleshooting. Students will utilize issue tracking systems and the ITIL service management framework to communicate, resolve, and document issues and incidents. Students will also study how endpoints interact with the greater IT infrastructure, exploring concepts such as network protocols, Wi-Fi, and server-based user identity support.\nThis course includes a career coaching curriculum to get you ready for your job search. The course totals 160 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " ops and cyber security 201 Learn to support technology operations by resolving issues with hardware, software, and virtual or cloud systems.\nIn this hands-on course, you will deploy and troubleshoot Windows and Linux operating systems in various virtual and cloud environments. Key skills such as customer service, knowledge and process documentation, system shell proficiency, performance monitoring, system process management, issue handling, backup/imaging/recovery tools, and software application installation, maintenance, and removal will be practiced.\nThe course focuses on practical systems support and troubleshooting. Students will utilize issue tracking systems and the ITIL service management framework to communicate, resolve, and document issues and incidents. Students will also study how endpoints interact with the greater IT infrastructure, exploring concepts such as network protocols, Wi-Fi, and server-based user identity support.\nThis course includes a career coaching curriculum to get you ready for your job search. The course totals 160 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" ops and cyber security 201 Outcomes"],
+      "responses": [
+        "At the end of this course, you will be able to land an entry-level IT Support Technician position with skills to:\n\nDeliver outstanding customer service\nAssess user needs and recommend solutions\nResolve technical issues in various virtual and cloud environments\nContribute to and using a shared knowledge repository\nRespond to, log, track, and resolve support cases in an issue tracking system\nApply a standardized troubleshooting methodology\nUtilize imaging, backup and recovery tools\nDeploy and supporting Windows 10 and Ubuntu Linux operating systems\nUse Microsoft 365 and Exchange\nInstall, update, and remove software applications\nStudy and apply ITIL best practices to service delivery\nMonitor and tune endpoint performance\nPerform IT asset management in a systematic fashion\nIncorporate infrastructure connectivity concepts such as network protocols, Wi-Fi, Voice-over-IP (VoIP) telephony\nTroubleshoot endpoint network connectivity issues\nBe prepared for a Ops 301: Networking and Sysadmin course"
+      ],
+      "tag": " ops and cyber security 201 At the end of this course, you will be able to land an entry-level IT Support Technician position with skills to:\n\nDeliver outstanding customer service\nAssess user needs and recommend solutions\nResolve technical issues in various virtual and cloud environments\nContribute to and using a shared knowledge repository\nRespond to, log, track, and resolve support cases in an issue tracking system\nApply a standardized troubleshooting methodology\nUtilize imaging, backup and recovery tools\nDeploy and supporting Windows 10 and Ubuntu Linux operating systems\nUse Microsoft 365 and Exchange\nInstall, update, and remove software applications\nStudy and apply ITIL best practices to service delivery\nMonitor and tune endpoint performance\nPerform IT asset management in a systematic fashion\nIncorporate infrastructure connectivity concepts such as network protocols, Wi-Fi, Voice-over-IP (VoIP) telephony\nTroubleshoot endpoint network connectivity issues\nBe prepared for a Ops 301: Networking and Sysadmin course"
+    },
+    {
+      "patterns": [" ops and cyber security 201 Prerequisites"],
+      "responses": [
+        "\nOps 101: Explore Cybersecurity: If you are new to the cybersecurity field and want to get a sample of the cyber experience, complete Ops 101 to build your own virtual private cloud on AWS and find out if a career in cybersecurity is right for you.\n            Ops 102: Intro to Computer Operations: If you\u2019re new to configuring computers, complete Ops 102 to get an introduction to how computers work! Practice installing software and load up your own virtual machine in AWS cloud.\n            Students with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Ops 102 course pages."
+      ],
+      "tag": " ops and cyber security 201 \nOps 101: Explore Cybersecurity: If you are new to the cybersecurity field and want to get a sample of the cyber experience, complete Ops 101 to build your own virtual private cloud on AWS and find out if a career in cybersecurity is right for you.\n            Ops 102: Intro to Computer Operations: If you\u2019re new to configuring computers, complete Ops 102 to get an introduction to how computers work! Practice installing software and load up your own virtual machine in AWS cloud.\n            Students with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Ops 102 course pages."
+    },
+    {
+      "patterns": [" ops and cyber security 201 Certification Alignment"],
+      "responses": [
+        "This course will substantially prepare you for achieving the learning objectives of CompTIA A+ certification. This course covers significant aspects of four of the five domains required for A+.\n\nCompTIA A+ 220-1001\n\n2.0 Networking\n3.0 Hardware\n4.0 Virtualization and Cloud Computing\n5.0 Hardware and Network Troubleshooting\n\n\n\nCareer Transition Services\nChanging careers is about more than learning a new skill. In tandem with your Ops education, you will receive powerful career-building strategic training so you can confidently start your job search as soon as (or even before!) you graduate.\nOur Career Transition Services provide training, mentoring, leadership, and introductions to industry partners to help you become a more well-rounded software developer and a leader in your field. These services, which start in Ops 201 and continue after Ops 401 graduation, involve a series of events, workshops, and assignments that help you think holistically about your new career and take actionable steps towards success.\nLearn More\n\nMaterial Requirements\nFor all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules\u00a0\u00bb\n\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+      ],
+      "tag": " ops and cyber security 201 This course will substantially prepare you for achieving the learning objectives of CompTIA A+ certification. This course covers significant aspects of four of the five domains required for A+.\n\nCompTIA A+ 220-1001\n\n2.0 Networking\n3.0 Hardware\n4.0 Virtualization and Cloud Computing\n5.0 Hardware and Network Troubleshooting\n\n\n\nCareer Transition Services\nChanging careers is about more than learning a new skill. In tandem with your Ops education, you will receive powerful career-building strategic training so you can confidently start your job search as soon as (or even before!) you graduate.\nOur Career Transition Services provide training, mentoring, leadership, and introductions to industry partners to help you become a more well-rounded software developer and a leader in your field. These services, which start in Ops 201 and continue after Ops 401 graduation, involve a series of events, workshops, and assignments that help you think holistically about your new career and take actionable steps towards success.\nLearn More\n\nMaterial Requirements\nFor all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules\u00a0\u00bb\n\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+    },
+    {
+      "patterns": [" ops and cyber security 201 Homework Policy"],
+      "responses": [
+        "In order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+      ],
+      "tag": " ops and cyber security 201 In order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+    },
+    {
+      "patterns": [" ops and cyber security 301 Tuition"],
+      "responses": ["$5,000"],
+      "tag": " ops and cyber security 301 $5,000"
+    },
+    {
+      "patterns": [" ops and cyber security 301 day duration"],
+      "responses": ["4 Weeks"],
+      "tag": " ops and cyber security 301 4 Weeks"
+    },
+    {
+      "patterns": [" ops and cyber security 301 night duration"],
+      "responses": ["8 Weeks"],
+      "tag": " ops and cyber security 301 8 Weeks"
+    },
+    {
+      "patterns": [" ops and cyber security 301 Overview"],
+      "responses": [
+        "Gain hands-on Systems Administrator skills in this exciting course that follows the journey of the fictional Globex Corporation as it grows from a startup to a multinational enterprise with fully-functional network and information systems. As their new corporate systems administrator, get ready to upgrade obsolete systems and design new networks in this fast-paced learning environment that mirrors critical on-the-job scenarios designed to prepare you for real-world Ops challenges.\nThe course integrates practical network and systems administration operations such as network design and troubleshooting, server deployment and configuration, user identity management, scripting & automation, and system health monitoring with professional exercises in change management and project planning in a simulated on-the-job narrative.\nThis course includes a career coaching curriculum to get you ready for your job search. The course totals 160 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " ops and cyber security 301 Gain hands-on Systems Administrator skills in this exciting course that follows the journey of the fictional Globex Corporation as it grows from a startup to a multinational enterprise with fully-functional network and information systems. As their new corporate systems administrator, get ready to upgrade obsolete systems and design new networks in this fast-paced learning environment that mirrors critical on-the-job scenarios designed to prepare you for real-world Ops challenges.\nThe course integrates practical network and systems administration operations such as network design and troubleshooting, server deployment and configuration, user identity management, scripting & automation, and system health monitoring with professional exercises in change management and project planning in a simulated on-the-job narrative.\nThis course includes a career coaching curriculum to get you ready for your job search. The course totals 160 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" ops and cyber security 301 Outcomes"],
+      "responses": [
+        "At the end of this course, you will be able to land an entry-level Network Operations Specialist or Systems Administrator job with skills to:\n\nImplement ITIL change and configuration management best practices\nApply Agile project management methodologies to IT systems administration\nDesign and deploy a client-server infrastructure\nAdminister critical IT and network systems\nPractice identity management in Active Directory (AD)/LDAP protocol\nDeploy and use a database in Microsoft SQL Server 2019\nAnalyze how cloud systems can integrate into on-premise systems\nAutomate OS tasks using scripting languages Bash, Powershell, and Python\nDesign and deploy a complete enterprise-grade network infrastructure including routers, switches and firewalls\nTroubleshoot challenging network problem scenarios\nImplement network protocols TCP/IP, DHCP, DNS, and routing\nOversee patch management of various systems\nResolve network problems using network analyzer tools and network management solutions\nBe prepared for a Ops 401: Networking and Sysadmin course"
+      ],
+      "tag": " ops and cyber security 301 At the end of this course, you will be able to land an entry-level Network Operations Specialist or Systems Administrator job with skills to:\n\nImplement ITIL change and configuration management best practices\nApply Agile project management methodologies to IT systems administration\nDesign and deploy a client-server infrastructure\nAdminister critical IT and network systems\nPractice identity management in Active Directory (AD)/LDAP protocol\nDeploy and use a database in Microsoft SQL Server 2019\nAnalyze how cloud systems can integrate into on-premise systems\nAutomate OS tasks using scripting languages Bash, Powershell, and Python\nDesign and deploy a complete enterprise-grade network infrastructure including routers, switches and firewalls\nTroubleshoot challenging network problem scenarios\nImplement network protocols TCP/IP, DHCP, DNS, and routing\nOversee patch management of various systems\nResolve network problems using network analyzer tools and network management solutions\nBe prepared for a Ops 401: Networking and Sysadmin course"
+    },
+    {
+      "patterns": [" ops and cyber security 301 Prerequisites"],
+      "responses": [
+        "\nRequired: Familiarity with algebra concepts.\nOps 201:  Foundations of Computer Operations Learn to support technology operations by resolving issues with hardware, software, and virtual or cloud systems.\n            Students with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the  Ops 102 and Ops 201 course pages."
+      ],
+      "tag": " ops and cyber security 301 \nRequired: Familiarity with algebra concepts.\nOps 201:  Foundations of Computer Operations Learn to support technology operations by resolving issues with hardware, software, and virtual or cloud systems.\n            Students with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the  Ops 102 and Ops 201 course pages."
+    },
+    {
+      "patterns": [" ops and cyber security 301 Certification Alignment"],
+      "responses": [
+        "This course will substantially prepare you for achieving the learning objectives of CompTIA Network+ certification. This course covers significant aspects of four of the five domains required for Network+.\n\nCompTIA Network+ N10-007\n\n1.0 Networking Concepts\n2.0 Infrastructure\n3.0 Network Operations\n5.0 Network Troubleshooting and Tools\n\n\n\nCareer Transition Services\nChanging careers is about more than learning a new skill. In tandem with your Ops education, you will receive powerful career-building strategic training so you can confidently start your job search as soon as (or even before!) you graduate.\nOur Career Transition Services provide training, mentoring, leadership, and introductions to industry partners to help you become a more well-rounded software developer and a leader in your field. These services, which start in Ops 201 and continue after Ops 401 graduation, involve a series of events, workshops, and assignments that help you think holistically about your new career and take actionable steps towards success.\nLearn More\n\nMaterial Requirements\nFor all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules\u00a0\u00bb\n\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+      ],
+      "tag": " ops and cyber security 301 This course will substantially prepare you for achieving the learning objectives of CompTIA Network+ certification. This course covers significant aspects of four of the five domains required for Network+.\n\nCompTIA Network+ N10-007\n\n1.0 Networking Concepts\n2.0 Infrastructure\n3.0 Network Operations\n5.0 Network Troubleshooting and Tools\n\n\n\nCareer Transition Services\nChanging careers is about more than learning a new skill. In tandem with your Ops education, you will receive powerful career-building strategic training so you can confidently start your job search as soon as (or even before!) you graduate.\nOur Career Transition Services provide training, mentoring, leadership, and introductions to industry partners to help you become a more well-rounded software developer and a leader in your field. These services, which start in Ops 201 and continue after Ops 401 graduation, involve a series of events, workshops, and assignments that help you think holistically about your new career and take actionable steps towards success.\nLearn More\n\nMaterial Requirements\nFor all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules\u00a0\u00bb\n\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+    },
+    {
+      "patterns": [" ops and cyber security 301 Homework Policy"],
+      "responses": [
+        "In order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+      ],
+      "tag": " ops and cyber security 301 In order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+    },
+    {
+      "patterns": [" ops and cyber security 401 Tuition"],
+      "responses": ["$12,000"],
+      "tag": " ops and cyber security 401 $12,000"
+    },
+    {
+      "patterns": [" ops and cyber security 401 day duration"],
+      "responses": ["10 Weeks"],
+      "tag": " ops and cyber security 401 10 Weeks"
+    },
+    {
+      "patterns": [" ops and cyber security 401 night duration"],
+      "responses": ["20 Weeks"],
+      "tag": " ops and cyber security 401 20 Weeks"
+    },
+    {
+      "patterns": [" ops and cyber security 401 Overview"],
+      "responses": [
+        "Ready to kickstart your exciting career in cyber ops? In this intensive course, delve into critical cyber processes like risk assessment, data encryption, network security, threat modeling, code analysis, vulnerability scanning, and incident response. Gain valuable ethical hacker skills in penetration testing, and show off your awesome new abilities in two resume-enhancing projects!\nDesigned to prepare you for today\u2019s most in-demand security skills, this hands-on course emphasizes practical cyber operations including both offensive and defensive roles. Students will gain cutting-edge cyber ops skills by analyzing and exploiting systems vulnerabilities, implementing defenses against common threats, and using cyber toolkits such as Kali Linux and Metasploit. Vulnerability scanning tools such as Nessus are utilized, as well as security monitoring tools such as Splunk.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+      ],
+      "tag": " ops and cyber security 401 Ready to kickstart your exciting career in cyber ops? In this intensive course, delve into critical cyber processes like risk assessment, data encryption, network security, threat modeling, code analysis, vulnerability scanning, and incident response. Gain valuable ethical hacker skills in penetration testing, and show off your awesome new abilities in two resume-enhancing projects!\nDesigned to prepare you for today\u2019s most in-demand security skills, this hands-on course emphasizes practical cyber operations including both offensive and defensive roles. Students will gain cutting-edge cyber ops skills by analyzing and exploiting systems vulnerabilities, implementing defenses against common threats, and using cyber toolkits such as Kali Linux and Metasploit. Vulnerability scanning tools such as Nessus are utilized, as well as security monitoring tools such as Splunk.\nThis course includes a career coaching curriculum to get you ready for your job search, plus job search assistance after graduation. The course totals 400 hours, including lectures, lab, coworking, and collaborative projects."
+    },
+    {
+      "patterns": [" ops and cyber security 401 Outcomes"],
+      "responses": [
+        "At the end of this course, you will be able to land an entry-level Cybersecurity Analyst or Operations Technician with skills to:\n\nApply the NIST risk management framework (RMF) to risk assessment scenarios\nDocument risk mitigations and perform security compliance audits\nTake a security project all the way from conceptual requirements to technical implementation\nApply modern cryptographic principles to protect data at rest and in transit\nUse data loss prevention (DLP) tools\nPerform threat analysis and threat modeling using various tools such as STRIDE, cyber kill-chain, and MITRE ATT&CK\nExplore DevOps, secure coding, and malware analysis\nAdminister anti-malware systems and various security tools\nAnalyze IT systems security with vulnerability scanning\nPerform a complete penetration test lifecycle\nConfigure an intrusion detection/prevention system\nAct as a CSIRT in performing incident response operations and SIEM event monitoring as part of threat detection operations\nDeploy configure, and query a Splunk SIEM data collection system\nOversee network security efforts using VPN and firewall technologies"
+      ],
+      "tag": " ops and cyber security 401 At the end of this course, you will be able to land an entry-level Cybersecurity Analyst or Operations Technician with skills to:\n\nApply the NIST risk management framework (RMF) to risk assessment scenarios\nDocument risk mitigations and perform security compliance audits\nTake a security project all the way from conceptual requirements to technical implementation\nApply modern cryptographic principles to protect data at rest and in transit\nUse data loss prevention (DLP) tools\nPerform threat analysis and threat modeling using various tools such as STRIDE, cyber kill-chain, and MITRE ATT&CK\nExplore DevOps, secure coding, and malware analysis\nAdminister anti-malware systems and various security tools\nAnalyze IT systems security with vulnerability scanning\nPerform a complete penetration test lifecycle\nConfigure an intrusion detection/prevention system\nAct as a CSIRT in performing incident response operations and SIEM event monitoring as part of threat detection operations\nDeploy configure, and query a Splunk SIEM data collection system\nOversee network security efforts using VPN and firewall technologies"
+    },
+    {
+      "patterns": [" ops and cyber security 401 Prerequisites"],
+      "responses": [
+        "\nRequired: Familiarity with algebra concepts\nOps 301: Networking and Systems Administration\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Ops 201 and Ops 301 course pages."
+      ],
+      "tag": " ops and cyber security 401 \nRequired: Familiarity with algebra concepts\nOps 301: Networking and Systems Administration\nStudents with previous experience can test out of this requirement in their application. If you'd like to test straight into this course, please make sure you have experience with all of the topics listed on the Ops 201 and Ops 301 course pages."
+    },
+    {
+      "patterns": [" ops and cyber security 401 Certification Alignment"],
+      "responses": [
+        "This course will substantially prepare you for achieving the learning objectives of CompTIA Security+ certification. This course covers significant aspects of all six domains required for Security+.\n\n1.0 Threats, Attacks, and Vulnerabilities\n2.0 Technologies and Tools\n3.0 Architecture and Design\n4.0 Identity and Access Management\n5.0 Risk management\n6.0 Cryptography and PKI\n\n\nCareer Transition Services\nChanging careers is about more than learning a new skill. In tandem with your Ops education, you will receive powerful career-building strategic training so you can confidently start your job search as soon as (or even before!) you graduate.\nOur Career Transition Services provide training, mentoring, leadership, and introductions to industry partners to help you become a more well-rounded software developer and a leader in your field. These services, which start in Ops 201 and continue after Ops 401 graduation, involve a series of events, workshops, and assignments that help you think holistically about your new career and take actionable steps towards success.\nLearn More\n\nMaterial Requirements\nFor all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules\u00a0\u00bb\n\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+      ],
+      "tag": " ops and cyber security 401 This course will substantially prepare you for achieving the learning objectives of CompTIA Security+ certification. This course covers significant aspects of all six domains required for Security+.\n\n1.0 Threats, Attacks, and Vulnerabilities\n2.0 Technologies and Tools\n3.0 Architecture and Design\n4.0 Identity and Access Management\n5.0 Risk management\n6.0 Cryptography and PKI\n\n\nCareer Transition Services\nChanging careers is about more than learning a new skill. In tandem with your Ops education, you will receive powerful career-building strategic training so you can confidently start your job search as soon as (or even before!) you graduate.\nOur Career Transition Services provide training, mentoring, leadership, and introductions to industry partners to help you become a more well-rounded software developer and a leader in your field. These services, which start in Ops 201 and continue after Ops 401 graduation, involve a series of events, workshops, and assignments that help you think holistically about your new career and take actionable steps towards success.\nLearn More\n\nMaterial Requirements\nFor all Ops courses beyond 101, you must come to class on the first day with:\n\nA recent-model laptop (or desktop) computer\nAn Ops Lab Kit from Code Fellows, which contains tools of an IT pro, and a PC to use for labs (where you can uninstall/reinstall the operating system repeatedly).\n\nLaptop Requirements\nYou are required to supply your own laptop that meets the below requirements. Chromebooks are not suitable for this course, since they are generally underpowered, and not configured for you to control the installed software. You are responsible for the upkeep and maintenance of your laptop throughout the course.\n\n64-bit Operating System, like macOS or Windows 10\nFully up to date, with the latest version of the operating system and all security updates installed\nAt least 100GB of free space on the hard drive\nAt least 16GB of RAM required. 32GB RAM strongly preferred\nFree of viruses, and in general working order\n\nOps Lab Kit\nBy the first day of class, you will need to have received an Ops Lab Kit from Code Fellows. This means you are responsible for picking up the Lab Kit at a published time or arranging for it to be delivered to you before class starts.\nEach kit contains:\n\nA desktop tower PC computer intended for lab and data overwrite\nCompatible peripherals\nTwo 32GB USB 3.0 flash drive\nSysadmin toolkits\nCat5e networking supplies\nA wireless router for firmware modifications\nAnd more!\n\nEach kit costs $400, which will be billed to you with your course invoice.\n\nStacked Modules\nConcepts in each of our courses are taught using stacked modules, where a new concept is introduced in each class session, building upon what came before it. This is a challenging style that requires persistence, practice, and collaboration, but allows more concepts to be introduced over the length of the course. This method helps students learn and retain more information in a short period of time. Learn more about stacked modules\u00a0\u00bb\n\n\nHomework Policy\nIn order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+    },
+    {
+      "patterns": [" ops and cyber security 401 Homework Policy"],
+      "responses": [
+        "In order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+      ],
+      "tag": " ops and cyber security 401 In order to pass the class, students must attain at least 90% of available points.\n\nProfessionalism\nPunctuality, participation in discussions, completion of assignments, and demonstration of professional courtesy to others are required, in accordance with our Code of Conduct. Attendance will be taken at the beginning of every class. Passing requires at least 90% attendance. Students should always contact the instructors ahead of time if they are unable to attend all or part of the published class/lab hours.\nApply Now"
+    }
+  ]
+}

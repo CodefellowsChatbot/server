@@ -1,36 +1,44 @@
 from resources.info import Info
 import json
 
-info = Info()
-# print(info.courses["javascript"])
+def main():
+    info = Info()
+    # print(info.courses["javascript"])
+
+    output = {"intents": []}
+
+    def walk_json(json_obj, last=""):
+        for key in json_obj:
+            if isinstance(json_obj[key], str):
+                output["intents"].append(
+                    {
+                        "patterns": [f"{last} {key}"],
+                        "responses": [json_obj[key]],
+                        "tag": f"{last} {json_obj[key]}",
+                    }
+                )
+            elif isinstance(json_obj[key], list):
+                output["intents"].append(
+                    {
+                        "patterns": [f"{last} {key}"],
+                        "responses": json_obj[key],
+                        "tag": f"{last} {json_obj[key]}",
+                    }
+                )
+            elif hasattr(json_obj[key], "__iter__"):
+                walk_json(json_obj[key], f"{last} {key}")
+            else:
+                print(last, json_obj[key])
+                pass
 
 
-def walk_json(json, last=""):
-    output = {"intents":[]}
-    for key in json:
-        if isinstance(json[key], str):
-            output["intents"].append(
-                {
-                    "pattern": f"{last} {key}",
-                    "responses": [json[key]],
-                    "tag": f"{last} {json[key]}",
-                }
-            )
-        elif isinstance(json[key], list):
-            # print("found a list")
-            print(
-                {
-                    "pattern": f"{last} {key}",
-                    "responses": json[key],
-                    "tag": f"{last} {json[key]}",
-                }
-            )
-        elif hasattr(json[key], "__iter__"):
-            return walk_json(json[key], f"{last} {key}")
-        else:
-            print(last, json[key])
-    return output
+    walk_json(info.courses)
+    final_out = json.dumps(output)
+    # print(final_out)
 
+    ## put file in right place
+    with open('./chat_bot/intents.json', 'w') as writer:
+        writer.write(final_out)
 
-intents = walk_json(info.courses)
-print(json.dumps(intents))
+if __name__ == "__main__":
+    main()
