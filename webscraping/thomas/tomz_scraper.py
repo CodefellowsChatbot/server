@@ -17,6 +17,8 @@ URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedul
 
 def data_harvest(URL):
     response = requests.get(URL)
+    if response.ok == False:
+        return None
 
     cf_courses = response.json()["courses"]
 
@@ -33,8 +35,9 @@ def data_harvest(URL):
 
         calendar.append(cf_normalized)
 
-    print(calendar[0])     # REMOVE THIS ****************************
-
+    print(cf_courses)
+    # print(calendar[0])     # REMOVE THIS ****************************
+    return calendar
 
 
          
