@@ -42,3 +42,4 @@ class Links:
     events_calendar = "https://testing-www.codefellows.org/events-calendar/"
     student_stories = "https://testing-www.codefellows.org/blog/category/student-stories/"
     blog = "https://testing-www.codefellows.org/blog/"
+
