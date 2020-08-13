@@ -1,12 +1,15 @@
 # import requests, os, sys
+
 # currentdir = os.path.dirname(os.path.realpath(__file__))
 # parentdir = os.path.dirname(currentdir)
 # sys.path.append(parentdir)
+
 # from resources.links import Links
 
 # links = Links()
 
 # URL = links.course_calendar_json
+# ***********************************************
 
 import requests
 
@@ -26,10 +29,10 @@ def data_harvest(URL):
             'start date' : course["course"]["startDate"],
             'track' : course["course"]["track"],
             'Tuition' : "${:,.2f}".format(course["course"]["price"]),
-        }
+        }}
 
-        }
         calendar.append(cf_normalized)
+
     print(calendar[0])     # REMOVE THIS ****************************
 
 
