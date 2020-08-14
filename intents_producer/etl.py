@@ -33,6 +33,10 @@ def main():
 
 
     walk_json(info.courses)
+    walk_json(info.events)
+    walk_json(info.apply)
+    walk_json(info.employment)
+    walk_json(info.financing)
     final_out = json.dumps(output)
     # print(final_out)
 
