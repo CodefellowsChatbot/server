@@ -8,4 +8,6 @@ RUN pip3 install poetry
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev
 ENTRYPOINT ["python"]
+CMD ["intents_producer/etl.py"]
+cmd ["chat_bot/train.py"]
 CMD ["server/server.py"]
