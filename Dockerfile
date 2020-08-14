@@ -7,7 +7,7 @@ ENV PYTHONPATH=${PYTHONPATH}:${PWD}
 RUN pip3 install poetry
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev
+RUN python intents_producer/etl.py
+RUN python chat_bot/train.py
 ENTRYPOINT ["python"]
-CMD ["intents_producer/etl.py"]
-cmd ["chat_bot/train.py"]
 CMD ["server/server.py"]
