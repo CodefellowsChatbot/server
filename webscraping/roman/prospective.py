@@ -129,4 +129,10 @@ def financing_scholarship(URL):
 
     return data
 
-#print(financing_scholarship(('https://testing-www.codefellows.org/financing-and-scholarships/')))
+if __name__ == "__main__":
+    get_event_calendar('https://testing-www.codefellows.org/events-calendar/')
+    how_to_apply('https://testing-www.codefellows.org/how-to-apply/')
+    employment_data('https://testing-www.codefellows.org/employment-data/')
+    financing_scholarship('https://testing-www.codefellows.org/financing-and-scholarships/')
+
+
