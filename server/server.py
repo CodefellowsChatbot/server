@@ -1,9 +1,13 @@
 #!/usr/bin/python
 # coding: utf-8
 from flask import Flask, request, jsonify
+from intents_producer.etl import main as create_intents
+from chat_bot.train import main as train_chatbot
 from chat_bot.chat import ChatBot
 import os, sys
 
+# create_intents()
+# train_chatbot()
 chatbot = ChatBot()
 
 currentdir = os.path.dirname(os.path.realpath(__file__))
@@ -12,7 +16,6 @@ sys.path.append(parentdir)
 
 from resources.links import Links
 
-print(Links.javascript[401])
 
 
 app = Flask(__name__)
