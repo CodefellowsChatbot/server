@@ -14,7 +14,6 @@ def main():
 
     def walk_json(json_obj, last=""):
         for key in json_obj:
-            print("key = ", key)
             if isinstance(json_obj[key], str):
                 output["intents"].append(
                     {
