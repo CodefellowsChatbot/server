@@ -29,7 +29,8 @@ def calendar_data(URL):
 
 
     # pprint.pp(sorted_calendar)     # REMOVE THIS ****************************
-    return sorted_calendar
+    # return sorted_calendar
+    return calendar
 
 
 def course_calendar_by_track(calendar, track):
@@ -60,7 +61,7 @@ def course_calendar_by_course(calendar, handle):
         except KeyError:
             course_cat[course_code["handle"]] = []
     
-    return course_cat[0]
+    return course_cat
         
 
 def course_filters(calendar, course_family=None, track=None):
@@ -70,7 +71,7 @@ def course_filters(calendar, course_family=None, track=None):
         track_info = course_calendar_by_track(calendar, track)
         result = course_calendar_by_course(track_info, course_family)
 
-    return result
+    return result[0]
 
 
 
@@ -79,10 +80,10 @@ def course_filters(calendar, course_family=None, track=None):
 if __name__ == "__main__":
     URL = "https://s3-us-west-2.amazonaws.com/static.codefellows.org/courses/schedule.json"
     sorted_calendar = calendar_data(URL)
-    # pprint.pp(sorted_calendar)
+    # print(sorted_calendar)
+    pprint.pp(sorted_calendar)
     # course_filters(sorted_calendar, "code-201", "night")
     # sample = course_calendar_by_course(sorted_calendar, "code-201")
-    sample = course_filters(sorted_calendar, "code-301", "day")
+    # sample = course_filters(sorted_calendar, "code-301", "day")
     # sample = course_filters(sorted_calendar, "code-201")
-
-    print(sample)
+    # print(sample)

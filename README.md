@@ -52,7 +52,7 @@ heroku container:release web --app mvpflask
 
 - Original inspiration and starter code - YouTube "Python Chat Bot Tutorial - Chatbot with Deep Learning," a five-part tutorial, the first of which is [here.](https://www.youtube.com/watch?v=wypVcNIH6D4&list=PLzMcBGfZo4-ndH9FoC4YWHGXG5RZekt-Q)
 
-- __Skyler Burger__ helped with parsing JSON files.
+- __Skyler Burger__ helped with parsing JSON files and with mock test setup.
 
 - __Merry Cimakasky__, __Lee-Roy King__ and [Real Python](https://realpython.com/testing-third-party-apis-with-mocks/) helped with mock testing.
 
