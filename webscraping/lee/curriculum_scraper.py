@@ -58,10 +58,12 @@ def get_articles(page):
                 articles_dict[title] = body
                 articles_dict[f"tell me about the {title}"] = body
                 articles_dict[f"what is the {title}"] = body
-                articles_dict[f"tell me what the is{title}"] = body
+                articles_dict[f"tell me what the is {title}"] = body
                 articles_dict[f"tell me about {title}"] = body
                 articles_dict[f"what is the of {title}"] = body
                 articles_dict[f"what's the for {title}"] = body
+                if "outcomes" in title.lower():
+                    articles_dict[f"What will I learn in"] = body
 
             except AttributeError:
                 pass
