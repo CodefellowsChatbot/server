@@ -3,11 +3,14 @@ class Links:
         pass
     courses = {
         "javascript" :{
+
+            401: "https://testing-www.codefellows.org/courses/code-401/advanced-software-development-in-full-stack-javascript/",
+        },
+        "code": {
             101: "https://testing-www.codefellows.org/courses/code-101/explore-software-development/",
             102: "https://testing-www.codefellows.org/courses/code-102/intro-to-software-development/",
             201: "https://testing-www.codefellows.org/courses/code-201/foundations-of-software-development/",
             301: "https://testing-www.codefellows.org/courses/code-301/intermediate-software-development/",
-            401: "https://testing-www.codefellows.org/courses/code-401/advanced-software-development-in-full-stack-javascript/",
         },
         "python" : {
             401: "https://testing-www.codefellows.org/courses/code-401/advanced-software-development-in-python/"
