@@ -47,3 +47,23 @@ heroku create mvpflask
 heroku container:push web --app mvpflask
 heroku container:release web --app mvpflask
 ```
+
+## Citations and Attributions
+
+- Original inspiration and starter code - YouTube "Python Chat Bot Tutorial - Chatbot with Deep Learning," a five-part tutorial, the first of which is [here.](https://www.youtube.com/watch?v=wypVcNIH6D4&list=PLzMcBGfZo4-ndH9FoC4YWHGXG5RZekt-Q)
+
+- __Skyler Burger__ helped with parsing JSON files and with mock test setup.
+
+- __Merry Cimakasky__, __Lee-Roy King__ and [Real Python](https://realpython.com/testing-third-party-apis-with-mocks/) helped with mock testing.
+
+- __.gitignore__ content courtesy of https://www.toptal.com/developers/gitignore/api/python
+
+- [UML documentation intro](https://tallyfy.com/uml-diagram/#:~:text=A%20UML%20diagram%20is%20a,document%20information%20about%20the%20system.)
+
+
+* __StackOverflow__ helped with 
+- How to get POSTed JSON in Flask:
+https://stackoverflow.com/questions/20001229/how-to-get-posted-json-in-flask/35614301#35614301
+- How to exit Python script in Command Prompt:
+https://stackoverflow.com/questions/41524734/python-how-to-exit-python-script-in-command-prompt
+
