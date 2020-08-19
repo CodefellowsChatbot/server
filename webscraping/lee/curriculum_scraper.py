@@ -22,6 +22,8 @@ def get_tuition_and_duration(page, course) -> dict:
             output["what is the cost for"] = tuition_str
             output["how much for"] = tuition_str
             output["what is the tuition for"] = tuition_str
+            output["how expensive is"] = tuition_str
+
         elif "Nights" in para.text:
             night_raw = para.text.strip()
             night = night_raw.split(":")[1].strip()
@@ -36,6 +38,7 @@ def get_tuition_and_duration(page, course) -> dict:
             day = day_raw.split(":")[1].strip()
             day_str = f"The duration of that course is {day}"
             output["What is the day duration of"] = day_str
+            output["What is the duration of"] = day_str
             output["How long is at day"] = day_str
             output["how long does take"] = day_str
             output["how long is"] = day_str
