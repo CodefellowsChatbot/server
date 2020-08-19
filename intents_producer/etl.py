@@ -11,6 +11,10 @@ def main():
     # print(info.courses["javascript"])
 
     output = {"intents": []}
+    with open("chat_bot/greeting.json", "r") as data:
+        greetings = json.load(data)
+        for el in greetings['intents']:
+            output['intents'].append(el)
 
     def walk_json(json_obj, last=""):
         for key in json_obj:
