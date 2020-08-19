@@ -50,4 +50,3 @@ class ChatBot:
                     return(f"{self.bot_name}: {random.choice(intent['responses'])}")
         else:
             return(f"{self.bot_name}: I do not understand...")
-
