@@ -118,11 +118,11 @@ def financing_scholarship(URL):
     data['financing']['do you have discounts'] = 'Yup!'
     data['financing']['what discounts do you have'] = f'{result7.get_text()}' + ', ' f'{result8.get_text()}'
     result9 = soup.find('h2', id='scholarships')
-    data['financing']['do you have scolarship fund'] = 'Yes, we do!'
-    data['financing']['what scolarship fund do you have'] = result9.find_next_sibling().get_text() + ' ' + result9.find_next_sibling().find_next_sibling().get_text() 
-    data['financing']['who can apply for scolarship'] = soup.find('h3', text='Who Can Apply').find_next_sibling().get_text()
+    data['financing']['do you have scholarship fund'] = 'Yes, we do!'
+    data['financing']['what scholarship fund do you have'] = result9.find_next_sibling().get_text() + ' ' + result9.find_next_sibling().find_next_sibling().get_text() 
+    data['financing']['who can apply for scholarship'] = soup.find('h3', text='Who Can Apply').find_next_sibling().get_text()
     how_to_apply = soup.find('h3', text='How to Apply')
-    data['financing']['how to apply for scolarship'] = how_to_apply.find_next_sibling().get_text() + ' ' + how_to_apply.find_next_sibling().find_next_sibling().get_text()
+    data['financing']['how to apply for scholarship'] = how_to_apply.find_next_sibling().get_text() + ' ' + how_to_apply.find_next_sibling().find_next_sibling().get_text()
     result10 = soup.find('h2', id='gi-bill')
     data['financing']['what is gi bill'] = result10.find_next_sibling().get_text() + ' ' + result10.find_next_sibling().find_next_sibling().get_text()
     result11 = soup.find('h2', id='wa-retraining')
