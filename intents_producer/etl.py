@@ -1,3 +1,8 @@
+import os, sys
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+
 from resources.info import Info
 import json
 
@@ -6,6 +11,10 @@ def main():
     # print(info.courses["javascript"])
 
     output = {"intents": []}
+    with open("chat_bot/greeting.json", "r") as data:
+        greetings = json.load(data)
+        for el in greetings['intents']:
+            output['intents'].append(el)
 
     def walk_json(json_obj, last=""):
         for key in json_obj:
@@ -37,6 +46,7 @@ def main():
     walk_json(info.apply)
     walk_json(info.employment)
     walk_json(info.financing)
+    walk_json(info.calendar)
     final_out = json.dumps(output)
     # print(final_out)
 
