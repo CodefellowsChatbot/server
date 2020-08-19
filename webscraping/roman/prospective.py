@@ -42,10 +42,12 @@ def how_to_apply(URL):
     step_3 = soup.find(id='step-3')
     step_4 = soup.find(id='step-4')
     reserve = soup.find(id='reserve')
-    data['how to apply to school steps'] = step_1.get_text() + ', ' + step_2.get_text() + ', ' + step_3.get_text() + ', ' + step_4.get_text()
+    data['how to apply to school'] = step_1.get_text() + ', ' + step_2.get_text() + ', ' + step_3.get_text() + ', ' + step_4.get_text()
+    data['what are the steps to apply to school'] = step_1.get_text() + ', ' + step_2.get_text() + ', ' + step_3.get_text() + ', ' + step_4.get_text()
     data['steps'][f'how to be prepared to school preparation {prep.get_text()}'] = prep.find_next_sibling().get_text()
     data['steps'][f'how to submit the application'] = step_1.find_next_sibling().get_text()
-    data['steps'][f'about phone interview'] = step_2.find_next_sibling().get_text()
+    data['steps'][f'Tell me about phone interview'] = step_2.find_next_sibling().get_text()
+    data['steps'][f'What is phone interview'] = step_2.find_next_sibling().get_text()
     data['steps'][f'what is pre-work the entrance test'] = ''
     for i in range(4):
         data['steps'][f'what is pre-work the entrance test'] += step_3.find_all_next()[i].get_text() + ' '
@@ -68,7 +70,7 @@ def employment_data(URL):
     data['employment']['what is the percentage of job seekers - graduates %'] = result1.find_next_sibling().find_next().get_text()
     result2 = soup.find('td', text='Job Seekers - Non-Graduates')
     data['employment']['how many Job Seekers - Non-Graduates do'] = result2.find_next().get_text()
-    data['employment']['what is % percentage of Job Seekers - Non-Graduates'] = result2.find_next_sibling().find_next().get_text()
+    data['employment']['what is percentage of Job Seekers - Non-Graduates'] = result2.find_next_sibling().find_next().get_text()
     result4 = soup.find_all('td', class_='secondary-row')
     for el in result4:
         data['employment'][f'how many {el.get_text()}'] = el.find_next().get_text()
@@ -81,7 +83,7 @@ def employment_data(URL):
         data['employment'][f'what is percentage % {td.get_text()}'] = td.find_next_sibling().find_next().get_text()
     result6 = soup.find('td', text='Non-Seeking Graduates')
     data['employment']['how many Non-Seeking Graduates do'] = result6.find_next().get_text()
-    data['employment']['what percentage % Non-Seeking Graduates'] = result6.find_next_sibling().find_next().get_text()
+    data['employment']['what is percentage % Non-Seeking Graduates'] = result6.find_next_sibling().find_next().get_text()
     result7 = soup.find('td', text='Non-Reporting Graduates')
     data['employment']['how many Non-Reporting Graduates do'] = result7.find_next().get_text()
     data['employment']['what is the percentage % Non-Reporting Graduates'] = result7.find_next_sibling().find_next().get_text()
