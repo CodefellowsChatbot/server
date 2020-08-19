@@ -20,7 +20,8 @@ def get_event_calendar(URL):
         event_calendar['events'][f'{h1}'] = {}
         event_calendar['events'][f'{h1}']['when is'] = el.find('h2').get_text() + ' ' + el.find('h2').find_next_sibling('h2').get_text()
         event_calendar['events'][f'{h1}']['where is'] = el.find('h2').find_next_sibling().find_next_sibling().get_text()
-        event_calendar['events'][f'{h1}']['Tell about what description'] = el.find('p').get_text().split('.')[0]
+        event_calendar['events'][f'{h1}']['what description'] = el.find('p').get_text().split('.')[0]
+        event_calendar['events'][f'{h1}']['Tell me about'] = el.find('p').get_text().split('.')[0]
         event_calendar['what events do you have'] += h1 + ', '
 
     return event_calendar
@@ -75,7 +76,8 @@ def employment_data(URL):
     result5 = soup.find_all('tr', class_='bold')
     for el in result5:
         td = el.find('td')
-        data['employment'][f'{td.get_text()}'] = td.find_next().get_text()
+        data['employment'][f'what is {td.get_text()}'] = td.find_next().get_text()
+        data['employment'][f'how many students {td.get_text()}'] = td.find_next().get_text()
         data['employment'][f'what is percentage % {td.get_text()}'] = td.find_next_sibling().find_next().get_text()
     result6 = soup.find('td', text='Non-Seeking Graduates')
     data['employment']['how many Non-Seeking Graduates do'] = result6.find_next().get_text()
