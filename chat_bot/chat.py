@@ -3,8 +3,8 @@ import json
 
 import torch
 
-from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
+from chat_bot.model import NeuralNet
+from chat_bot.nltk_utils import bag_of_words, tokenize
 
 
 class ChatBot:
@@ -50,5 +50,3 @@ class ChatBot:
                     return(f"{self.bot_name}: {random.choice(intent['responses'])}")
         else:
             return(f"{self.bot_name}: I do not understand...")
-
-ChatBot()
