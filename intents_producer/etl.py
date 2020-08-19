@@ -1,3 +1,8 @@
+import os, sys
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+
 from resources.info import Info
 import json
 
@@ -37,6 +42,7 @@ def main():
     walk_json(info.apply)
     walk_json(info.employment)
     walk_json(info.financing)
+    walk_json(info.calendar)
     final_out = json.dumps(output)
     # print(final_out)
 
