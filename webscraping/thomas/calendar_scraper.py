@@ -28,9 +28,8 @@ def calendar_data(URL):
     sorted_calendar = sorted(calendar, key=lambda course: course["start date"])
 
 
-    # pprint.pp(sorted_calendar)     # REMOVE THIS ****************************
-    return sorted_calendar
-    # return calendar
+    pprint.pp(sorted_calendar)     # REMOVE THIS ****************************
+    # return sorted_calendar
 
 
 def course_calendar_by_track(calendar, track):
@@ -74,7 +73,6 @@ def course_filters(calendar, course_family=None, track=None):
         result = course_calendar_by_course(calendar, course_family)
     else:
         result = [{"start date": "Null"}]
-    # print(result)
     return result[0]
 
 
@@ -89,69 +87,73 @@ def final_output():
     preamble5 = "What is the schedule for"
     preamble6 = "What is the start date for"
 
-    days_101 = course_filters(calendar, "code-101","day")["start date"]
-    days_201 = course_filters(calendar, "code-201","day")["start date"]
-    nights_201 = course_filters(calendar, "code-201","night")["start date"]
-    days_301 = course_filters(calendar, "code-301","day")["start date"]
-    nights_301 = course_filters(calendar, "code-301","night")["start date"]
+    days_c101 = course_filters(calendar, "code-101","day")["start date"]
+    days_c201 = course_filters(calendar, "code-201","day")["start date"]
+    nights_c201 = course_filters(calendar, "code-201","night")["start date"]
+    days_c301 = course_filters(calendar, "code-301","day")["start date"]
+    nights_c301 = course_filters(calendar, "code-301","night")["start date"]
     dotnet_days = course_filters(calendar, "code-dotnet-401","day")["start date"]
     java_days = course_filters(calendar, "code-java-401","night")["start date"]
     javascript_days = course_filters(calendar, "code-javascript-401","day")["start date"]
     javascript_nights = course_filters(calendar, "code-javascript-401","night")["start date"]
     python_days = course_filters(calendar, "code-python-401","day")["start date"]
     python_nights = course_filters(calendar, "code-python-401","night")["start date"]
+    days_o101 = course_filters(calendar, "ops-101","day")["start date"]
+    days_o201 = course_filters(calendar, "ops-201","day")["start date"]
+    days_o301 = course_filters(calendar, "ops-301","day")["start date"]
+    days_o401 = course_filters(calendar, "ops-401","day")["start date"]
   
     return {
         "code": {
             "101":{
                 "day":{
-                preamble1:f"The next course starts on Saturday, {days_101}",
-                preamble2:f"The next course starts on Saturday, {days_101}",
-                preamble3:f"The next course starts on Saturday, {days_101}",
-                preamble4:f"The next course starts on Saturday, {days_101}",
-                preamble5:f"The next course starts on Saturday, {days_101}",
-                preamble6:f"The next course starts on Saturday, {days_101}"
+                preamble1:f"The next course starts on Saturday, {days_c101}",
+                preamble2:f"The next course starts on Saturday, {days_c101}",
+                preamble3:f"The next course starts on Saturday, {days_c101}",
+                preamble4:f"The next course starts on Saturday, {days_c101}",
+                preamble5:f"The next course starts on Saturday, {days_c101}",
+                preamble6:f"The next course starts on Saturday, {days_c101}"
                 }
             },
             "201":{
                 "day":{
-                preamble1:f"The next day course starts on {days_201}",
-                preamble2:f"The next day course starts on {days_201}",
-                preamble3:f"The next day course starts on {days_201}",
-                preamble4:f"The next day course starts on {days_201}",
-                preamble5:f"The next day course starts on {days_201}",
-                preamble6:f"The next day course starts on {days_201}"
+                preamble1:f"The next day course starts on {days_c201}",
+                preamble2:f"The next day course starts on {days_c201}",
+                preamble3:f"The next day course starts on {days_c201}",
+                preamble4:f"The next day course starts on {days_c201}",
+                preamble5:f"The next day course starts on {days_c201}",
+                preamble6:f"The next day course starts on {days_c201}"
                 },
                 "night": {
-                preamble1:f"The next night course starts on {nights_201}",
-                preamble2:f"The next night course starts on {nights_201}",
-                preamble3:f"The next night course starts on {nights_201}",
-                preamble4:f"The next night course starts on {nights_201}",
-                preamble5:f"The next night course starts on {nights_201}",
-                preamble6:f"The next night course starts on {nights_201}"
+                preamble1:f"The next night course starts on {nights_c201}",
+                preamble2:f"The next night course starts on {nights_c201}",
+                preamble3:f"The next night course starts on {nights_c201}",
+                preamble4:f"The next night course starts on {nights_c201}",
+                preamble5:f"The next night course starts on {nights_c201}",
+                preamble6:f"The next night course starts on {nights_c201}"
                 }
             },
             "301":{
                 "day":{
-                preamble1:f"The next day course starts on {days_301}",
-                preamble2:f"The next day course starts on {days_301}",
-                preamble3:f"The next day course starts on {days_301}",
-                preamble4:f"The next day course starts on {days_301}",
-                preamble5:f"The next day course starts on {days_301}",
-                preamble6:f"The next day course starts on {days_301}"
+                preamble1:f"The next day course starts on {days_c301}",
+                preamble2:f"The next day course starts on {days_c301}",
+                preamble3:f"The next day course starts on {days_c301}",
+                preamble4:f"The next day course starts on {days_c301}",
+                preamble5:f"The next day course starts on {days_c301}",
+                preamble6:f"The next day course starts on {days_c301}"
                 },
                 "night": {
-                preamble1:f"The next night course starts on {nights_301}",
-                preamble2:f"The next night course starts on {nights_301}",
-                preamble3:f"The next night course starts on {nights_301}",
-                preamble4:f"The next night course starts on {nights_301}",
-                preamble5:f"The next night course starts on {nights_301}",
-                preamble6:f"The next night course starts on {nights_301}"
+                preamble1:f"The next night course starts on {nights_c301}",
+                preamble2:f"The next night course starts on {nights_c301}",
+                preamble3:f"The next night course starts on {nights_c301}",
+                preamble4:f"The next night course starts on {nights_c301}",
+                preamble5:f"The next night course starts on {nights_c301}",
+                preamble6:f"The next night course starts on {nights_c301}"
                 }
             }
         },
         "python": {
-            401:{
+            "401":{
                 "day":{
                 preamble1:f"The next day course starts on {python_days}",
                 preamble2:f"The next day course starts on {python_days}",
@@ -171,7 +173,7 @@ def final_output():
             }
         },
         "javascript": {
-            401:{
+            "401":{
                 "day":{
                 preamble1:f"The next day course starts on {javascript_days}",
                 preamble2:f"The next day course starts on {javascript_days}",
@@ -191,7 +193,7 @@ def final_output():
             }
         },
         "java": {
-            401:{
+            "401":{
                 "day":{
                 preamble1:f"The next day course starts on {java_days}",
                 preamble2:f"The next day course starts on {java_days}",
@@ -203,7 +205,7 @@ def final_output():
             }
         },
         "dotnet": {
-            401:{
+            "401":{
                 "day":{
                 preamble1:f"The next day course starts on {dotnet_days}",
                 preamble2:f"The next day course starts on {dotnet_days}",
@@ -213,7 +215,50 @@ def final_output():
                 preamble6:f"The next day course starts on {dotnet_days}"
                 }
             }
-        } 
+        },
+        "ops": {
+            "101":{
+                "day":{
+                preamble1:f"The next course starts on Saturday, {days_o101}",
+                preamble2:f"The next course starts on Saturday, {days_o101}",
+                preamble3:f"The next course starts on Saturday, {days_o101}",
+                preamble4:f"The next course starts on Saturday, {days_o101}",
+                preamble5:f"The next course starts on Saturday, {days_o101}",
+                preamble6:f"The next course starts on Saturday, {days_o101}"
+                }
+            },
+            "201":{
+                "day":{
+                preamble1:f"The next day course starts on {days_o201}",
+                preamble2:f"The next day course starts on {days_o201}",
+                preamble3:f"The next day course starts on {days_o201}",
+                preamble4:f"The next day course starts on {days_o201}",
+                preamble5:f"The next day course starts on {days_o201}",
+                preamble6:f"The next day course starts on {days_o201}"
+                }
+            },
+            "301":{
+                "day":{
+                preamble1:f"The next day course starts on {days_o301}",
+                preamble2:f"The next day course starts on {days_o301}",
+                preamble3:f"The next day course starts on {days_o301}",
+                preamble4:f"The next day course starts on {days_o301}",
+                preamble5:f"The next day course starts on {days_o301}",
+                preamble6:f"The next day course starts on {days_o301}"
+                }
+            },
+            "401":{
+                "day":{
+                preamble1:f"The next day course starts on {javascript_days}",
+                preamble2:f"The next day course starts on {javascript_days}",
+                preamble3:f"The next day course starts on {javascript_days}",
+                preamble4:f"The next day course starts on {javascript_days}",
+                preamble5:f"The next day course starts on {javascript_days}",
+                preamble6:f"The next day course starts on {javascript_days}"
+                }
+            }
+        }
+
     }
 
 
