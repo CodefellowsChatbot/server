@@ -5,8 +5,8 @@ import json
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-from chat_bot.nltk_utils import bag_of_words, tokenize, stem
-from chat_bot.model import NeuralNet
+from nltk_utils import bag_of_words, tokenize, stem
+from model import NeuralNet
 
 def main():
     with open('chat_bot/intents.json', 'r') as f:

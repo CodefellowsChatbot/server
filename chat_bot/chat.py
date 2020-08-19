@@ -3,8 +3,8 @@ import json
 
 import torch
 
-from chat_bot.model import NeuralNet
-from chat_bot.nltk_utils import bag_of_words, tokenize
+from model import NeuralNet
+from nltk_utils import bag_of_words, tokenize
 
 
 class ChatBot:
@@ -51,3 +51,4 @@ class ChatBot:
         else:
             return(f"{self.bot_name}: I do not understand...")
 
+ChatBot()
